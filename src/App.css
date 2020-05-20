@@ -1,17 +1,236 @@
+html{font-size: 32px;}
 .App {
+  text-align: center;
+  background-color:rgb(241,237,228);
+  position: absolute;
+  height:100vh;
+  width:100vw;
+  z-index: -100;
+}
+
+.App-cover-logo {
+  position: absolute;
+  top: 1.03rem;
+  left: 0.41rem;
+}
+
+.App-cover-logo img {
+  display: block;
+  height: 0.91rem;
+  width:12.88rem;
+}
+
+.App-cover-logo-f {
+  position: absolute;
+  top: 2.59rem;
+  left: 0.34rem;
+}
+
+.App-cover-logo-f img {
+  display: block;
+  height: 2.78rem;
+  width:22.47rem
+}
+
+.App-Cover-P {
+  position: absolute;
+  left: 7.19rem;
+  top: 3.75rem;
+}
+
+.App-Cover-P img {
+  display: block;
+  height:31.75rem;
+  width:15.94rem;
+}
+
+.App-Cover-circle-b {
+  position: absolute;
+  left: 0.81rem;
+  bottom: 5.53rem;
+  width: 16.97rem;
+  height: 16.97rem;
+  opacity: 0.8;
+  background:rgb(10,41,251);
+  -moz-border-radius: 8.485rem;
+  -webkit-border-radius: 8.485rem;
+  border-radius: 8.485rem;
+  z-index: 2;
+}
+
+.cover-circle-b-title {
+  font-size: 2.34rem;
+  color:white;
+  font-weight: normal;
+	font-stretch: normal;
+  line-height: 0.9rem;
+	letter-spacing: 0rem;
+}
+
+.cover-slash {
+  position: relative;
+  left: 2.22rem;
+  width: 12.59rem;
+	height: 0.25rem;
+	background-color: #fdaaa9;
+}
+
+.cover-circle-b-content {
+  position: relative;
+  left:0.78rem;
+  width: 15.38rem;
+	height: 3.44rem;
+  font-size: 0.81rem;
+  color:white;
+  font-weight: normal;
+	font-stretch: normal;
+  line-height: 0.9rem;
+  letter-spacing: 0rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-Cover-circle-p {
+  position: absolute;
+  left: 8.16rem;
+  bottom: 3.72rem;
+  width: 6rem;
+  height: 6rem;
+  background:rgb(253,170,169);
+  -moz-border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  border-radius: 3rem;
+  z-index: 3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Cover-circle-p-title
+{
+  position: relative;
+  top:0.8rem;
+  left:0.53rem;
+	width: 5rem;
+	height: 1.19rem;
+	font-family: SourceHanSerifCN-Bold;
+	font-size: 1.25rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.9rem;
+	letter-spacing: 0rem;
+	color: #0a29fb;
 }
+.Cover-circle-p-content
+{
+  position: relative;
+  left:1.88rem;
+  bottom:1.2rem;
+	width: 1.94rem;
+	height: 0.47rem;
+	font-family: GTWalsheimPro-Bold;
+	font-size: 0.65rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 2.72rem;
+	letter-spacing: 0rem;
+	color: #0a29fb;
+}
+
+.App-q1-logo {
+  position: absolute;
+  top: 0.78rem;
+  left: 1.5rem;
+}
+
+.App-q1-logo img {
+  display: block;
+  height: 0.91rem;
+  width:12.88rem;
+}
+
+.App-q1-background {
+  position: relative;
+  top: 2.69rem;
+  left: 1.56rem;
+  right:1.56rem;
+  bottom:2.63rem;
+  background-color: white;
+  height: 30.19rem;
+  width:20rem;
+}
+
+.App-q1-q1title {
+  position: relative;
+  left: 1.31rem;
+  top: 0.69rem;
+}
+
+.App-q1-q1title img {
+  display: block;
+  width:6.31rem;
+  height:1.13rem
+}
+
+.App-q1-q1qtitle {
+  position: relative;
+  left:1.09rem;
+  top:1.84rem;
+}
+
+.App-q1-q1qtitle img {
+  display: block;
+  width:17rem;
+  height:5.31rem;
+}
+
+.App-q1-q1p{
+  position: absolute;
+  top:9.16rem;
+  left:5.38rem;
+  width:10.91rem;
+  height:26.34rem;
+}
+
+.App-q1-q1p img{
+  display: block;
+}
+
+.App-q1-q1optionA {
+  position: absolute;
+  top:11.75rem;
+  left:0.91rem;
+  background: url(./asserts/pic/selectA.png) no-repeat;
+  width:10.53rem;
+  height:2.53rem;
+}
+
+.App-q1-q1optionB {
+  position: absolute;
+  top:15.72rem;
+  left:0.91rem;
+  background: url(./asserts/pic/selectB.png) no-repeat;
+  width:10.53rem;
+  height:2.53rem;
+}
+
+.App-q1-circle-p {
+  position: absolute;
+  left: 1.72rem;
+  bottom: 1.44rem;
+  width: 4.44rem;
+  height: 4.44rem;
+  background:rgb(253,170,169);
+  -moz-border-radius: 2.22rem;
+  -webkit-border-radius: 2.22rem;
+  border-radius: 2.22rem;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
+
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +243,32 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-Result {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-@keyframes App-logo-spin {
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* .App-link {
+  color: #61dafb;
+} */
+
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
