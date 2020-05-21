@@ -51,8 +51,12 @@ export class Q1 extends Component{
                     <div className="App-q1-q1qtitle">
                         <img src={q1qtitle} alt="q1qtitle"></img>
                     </div>
-                    <div onClick={this.onAselection} className="App-q1-q1optionA">A selection A</div>
-                    <div onClick={this.onBselection} className="App-q1-q1optionB">B selection B</div>
+                    <div onClick={this.onAselection} className="App-q1-q1optionA">
+                        <p className="App-q1-q1optionA-content">为我挣10个亿</p>    
+                    </div>
+                    <div onClick={this.onBselection} className="App-q1-q1optionB">
+                        <p className="App-q1-q1optionB-content">做我集团的门面</p>
+                    </div>
                     <Link to={'/q2'}>
                         <div className="App-q1-circle-p"></div>
                     </Link>

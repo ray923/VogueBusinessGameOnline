@@ -1,4 +1,5 @@
-html{font-size: 32px;}
+html{font-size: 16px;}
+
 .App {
   text-align: center;
   background-color:rgb(241,237,228);
@@ -13,37 +14,31 @@ html{font-size: 32px;}
   top: 1.03rem;
   left: 0.41rem;
 }
-
 .App-cover-logo img {
   display: block;
   height: 0.91rem;
   width:12.88rem;
 }
-
 .App-cover-logo-f {
   position: absolute;
   top: 2.59rem;
   left: 0.34rem;
 }
-
 .App-cover-logo-f img {
   display: block;
   height: 2.78rem;
   width:22.47rem
 }
-
 .App-Cover-P {
   position: absolute;
   left: 7.19rem;
   top: 3.75rem;
 }
-
 .App-Cover-P img {
   display: block;
   height:31.75rem;
   width:15.94rem;
 }
-
 .App-Cover-circle-b {
   position: absolute;
   left: 0.81rem;
@@ -57,7 +52,6 @@ html{font-size: 32px;}
   border-radius: 8.485rem;
   z-index: 2;
 }
-
 .cover-circle-b-title {
   font-size: 2.34rem;
   color:white;
@@ -66,7 +60,6 @@ html{font-size: 32px;}
   line-height: 0.9rem;
 	letter-spacing: 0rem;
 }
-
 .cover-slash {
   position: relative;
   left: 2.22rem;
@@ -74,7 +67,6 @@ html{font-size: 32px;}
 	height: 0.25rem;
 	background-color: #fdaaa9;
 }
-
 .cover-circle-b-content {
   position: relative;
   left:0.78rem;
@@ -88,7 +80,6 @@ html{font-size: 32px;}
   letter-spacing: 0rem;
   text-align: center;
 }
-
 .App-Cover-circle-p {
   position: absolute;
   left: 8.16rem;
@@ -101,7 +92,6 @@ html{font-size: 32px;}
   border-radius: 3rem;
   z-index: 3;
 }
-
 .Cover-circle-p-title
 {
   position: relative;
@@ -133,18 +123,17 @@ html{font-size: 32px;}
 	color: #0a29fb;
 }
 
+
 .App-q1-logo {
   position: absolute;
   top: 0.78rem;
   left: 1.5rem;
 }
-
 .App-q1-logo img {
   display: block;
   height: 0.91rem;
   width:12.88rem;
 }
-
 .App-q1-background {
   position: relative;
   top: 2.69rem;
@@ -155,61 +144,55 @@ html{font-size: 32px;}
   height: 30.19rem;
   width:20rem;
 }
-
 .App-q1-q1title {
   position: relative;
   left: 1.31rem;
   top: 0.69rem;
 }
-
 .App-q1-q1title img {
   display: block;
   width:6.31rem;
   height:1.13rem
 }
-
 .App-q1-q1qtitle {
   position: relative;
   left:1.09rem;
   top:1.84rem;
 }
-
 .App-q1-q1qtitle img {
   display: block;
   width:17rem;
   height:5.31rem;
 }
-
 .App-q1-q1p{
   position: absolute;
   top:9.16rem;
   left:5.38rem;
-  width:10.91rem;
-  height:26.34rem;
+  width:17.75rem;
+  z-index: 2;
 }
-
 .App-q1-q1p img{
   display: block;
+  width:17.75rem;
 }
-
 .App-q1-q1optionA {
   position: absolute;
   top:11.75rem;
   left:0.91rem;
   background: url(./asserts/pic/selectA.png) no-repeat;
+  background-size:100% 100%;
   width:10.53rem;
   height:2.53rem;
 }
-
 .App-q1-q1optionB {
   position: absolute;
   top:15.72rem;
   left:0.91rem;
   background: url(./asserts/pic/selectB.png) no-repeat;
+  background-size:100% 100%;
   width:10.53rem;
   height:2.53rem;
 }
-
 .App-q1-circle-p {
   position: absolute;
   left: 1.72rem;
@@ -220,7 +203,534 @@ html{font-size: 32px;}
   -moz-border-radius: 2.22rem;
   -webkit-border-radius: 2.22rem;
   border-radius: 2.22rem;
-  z-index: 3;
+  z-index: 1;
+}
+.App-q1-q1optionA-content {
+  position: absolute;
+  left:2.94rem;
+  bottom:0.22rem;
+  width: 5.8rem;
+	height: 0.91rem;
+	font-family: SourceHanSansCN-Medium;
+	font-size: 0.94rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.34rem;
+	letter-spacing: 0rem;
+	color: #ffffff;
+}
+.App-q1-q1optionB-content {
+  position: absolute;
+  left:2.94rem;
+  bottom:0.22rem;
+  width: 6.8rem;
+	height: 0.91rem;
+	font-family: SourceHanSansCN-Medium;
+	font-size: 0.94rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.34rem;
+	letter-spacing: 0rem;
+	color: #ffffff;
+}
+
+
+.App-q2-q2qtitle {
+  position: absolute;
+  left: 1.094rem;
+  top: 2.531rem;
+}
+.App-q2-q2qtitle img {
+  display: block;
+  width:14.094rem;
+  height:5.313rem;
+}
+.App-q2-circle-p{
+  position: absolute;
+  left: 7.594rem;
+  bottom: 0.781rem;
+  width: 4.44rem;
+  height: 4.44rem;
+  background:rgb(253,170,169);
+  -moz-border-radius: 2.22rem;
+  -webkit-border-radius: 2.22rem;
+  border-radius: 2.22rem;
+  z-index: 1;
+}
+
+
+.App-q3-background {
+  position: absolute;
+  top: 2.688rem;
+  left: 1.563rem;
+  background-color: white;
+  height: 30.188rem;
+  width:20rem;
+  background: url(./asserts/pic/q3background.png) no-repeat;
+  background-size:100% 100%;
+}
+.App-q3-q3qtitle {
+  position: relative;
+  left:1.09rem;
+  top:1.91rem;
+}
+.App-q3-q3qtitle img {
+  display: block;
+  width:16.19rem;
+  height:3.47rem;
+}
+.App-q3-circle-p{
+  position: absolute;
+  left: 14rem;
+  bottom: 2rem;
+  width: 4.44rem;
+  height: 4.44rem;
+  background:rgb(253,170,169);
+  -moz-border-radius: 2.22rem;
+  -webkit-border-radius: 2.22rem;
+  border-radius: 2.22rem;
+  z-index: 1;
+}
+.App-q3-q1optionA {
+  position: absolute;
+  left:1rem;
+  top:22.469rem;
+}
+.App-q3-q1optionA img {
+  display: block;
+  width: 9.3rem;
+  height: 2.7rem;
+}
+.App-q3-q1optionB {
+  position: absolute;
+  left:1rem;
+  top:26.438rem;
+}
+.App-q3-q1optionB img {
+  display: block;
+  width: 9.3rem;
+  height: 2.7rem;
+}
+.App-q3-apattern {
+  position: absolute;
+  top:9rem;
+  right:2rem;
+}
+.App-q3-apattern img{
+  display:block;
+  width:5rem;
+  height:6rem;
+}
+.App-q3-bpattern {
+  position: absolute;
+  top:11.813rem;
+  left:3rem;
+}
+.App-q3-bpattern img{
+  display:block;
+  width:5.688rem;
+  height:10.344rem;
+}
+
+
+.App-q4-q4qtitle {
+  position: absolute;
+  left: 1.063rem;
+  top: 2.531rem;
+}
+.App-q4-q4qtitle img {
+  display: block;
+  width:15.344rem;
+  height:5.281rem;
+}
+.App-q4-q4acontent {
+  position: absolute;
+  top:9rem;
+  left:1.813rem;
+}
+.App-q4-q4acontent img{
+  display:block;
+  height:13.594rem;
+  width:3.594rem;
+}
+.App-q4-q4apattern {
+  position: absolute;
+  top:10.469rem;
+  left:5.781rem;
+}
+.App-q4-q4apattern img{
+  display:block;
+  height:12.125rem;
+  width:4.156rem;
+}
+.App-q4-q4aoption {
+  position: absolute;
+  top:22.75rem;
+  left:1.781rem;
+}
+.App-q4-q4aoption img{
+  display: block;
+  width:7.594rem;
+  height:2.281rem;
+}
+.App-q4-q4bcontent {
+  position: absolute;
+  top:12.563rem;
+  left:11.594rem;
+}
+.App-q4-q4bcontent img{
+  display:block;
+  height:10.031rem;
+  width:3.594rem;
+}
+.App-q4-q4bpattern {
+  position: absolute;
+  top:13.469rem;
+  left:15.594rem;
+}
+.App-q4-q4bpattern img{
+  display:block;
+  height:9.125rem;
+  width:4rem;
+}
+.App-q4-q4boption {
+  position: absolute;
+  top:22.75rem;
+  left:11.625rem;
+}
+.App-q4-q4boption img{
+  display: block;
+  width:7.531rem;
+  height:2.281rem;
+}
+.App-q4-circle-p{
+  position: absolute;
+  left: 8.125rem;
+  bottom: 0.25rem;
+  width: 4.44rem;
+  height: 4.44rem;
+  background:rgb(253,170,169);
+  -moz-border-radius: 2.22rem;
+  -webkit-border-radius: 2.22rem;
+  border-radius: 2.22rem;
+  z-index: 1;
+}
+
+
+.App-q5-q5qtitle {
+  position: absolute;
+  left: 1.063rem;
+  top: 2.531rem;
+}
+.App-q5-q5qtitle img {
+  display: block;
+  width:16.969rem;
+  height:5.219rem;
+}
+.App-q5-circle-p{
+  position: absolute;
+  left: 11.813rem;
+  bottom: 6.094rem;
+  width: 4.44rem;
+  height: 4.44rem;
+  background:rgb(253,170,169);
+  -moz-border-radius: 2.22rem;
+  -webkit-border-radius: 2.22rem;
+  border-radius: 2.22rem;
+  z-index: 1;
+}
+.App-q5-q5optioinA {
+  position: absolute;
+  left:1.125rem;
+  top: 9.719rem;
+}
+.App-q5-q5optioinA img {
+  display:block;
+  height:2.531rem;
+  width:14.5rem;
+}
+.App-q5-q5optioinB {
+  position: absolute;
+  left: 2.719rem;
+  top: 13.406rem;
+}
+.App-q5-q5optioinB img {
+  display:block;
+  height:2.531rem;
+  width:16.313rem;
+}
+.App-q5-q5p {
+  position: absolute;
+  left:0;
+  top: 18.219rem;
+}
+.App-q5-q5p img{
+  display: block;
+  width:23.125rem;
+  height: 17.281rem;
+}
+
+
+.App-fillname-background {
+  text-align: center;
+  background:url(./asserts/pic/fillnamebackground.png) no-repeat;
+  background-size:100% 100%;
+  position: absolute;
+  height:100vh;
+  width:100vw;
+  z-index: -100;
+}
+.App-fillname-logo {
+  position: absolute;
+  top: 0.781rem;
+  left:1.5rem;
+}
+.App-fillname-logo img{
+  display: block;
+  height:0.906rem;
+  width:12.875rem;
+}
+.App-fillname-border {
+  position: absolute;
+  top:2.688rem;
+  left:1.563rem;
+  width:20rem;
+  height:30.188rem;
+  border: solid 0.031rem white;
+}
+.App-fillname-title {
+  position: absolute;
+  top:4.906rem;
+  left: 6.334rem;
+}
+.App-fillname-title img {
+  display: block;
+  height:1.156rem;
+  width: 7.188rem;
+}
+.App-fillname-circle {
+  position: absolute;
+  left: 7.25rem;
+  bottom: 2.313rem;
+  width: 5.469rem;
+  height: 5.469rem;
+  background:rgb(253,170,169);
+  -moz-border-radius: 2.735rem;
+  -webkit-border-radius: 2.735rem;
+  border-radius: 2.735rem;
+  z-index: 1;
+}
+.App-fillname-nametitle {
+  position: absolute;
+  left: 6.25rem;
+  top: 15.406rem;
+}
+.App-fillname-nametitle img{
+  display: block;
+  width:7.219rem;
+  height:1.156rem;
+}
+.App-fillname-fill {
+  position: absolute;
+  top:17.438rem;
+  left:2.219rem;
+}
+.App-fillname-fill input{
+  display: block;
+  width: 15.656rem;
+  height: 2.531rem;
+  border:solid 0.031rem #0a29fb;
+}
+.App-fillname-man {
+  position: absolute;
+  top:7.25rem;
+  left:2.219rem;
+}
+.App-fillname-man img {
+  display:block;
+  height:5.938rem;
+  width:5.938rem;
+}
+.App-fillname-women {
+  position: absolute;
+  top:7.25rem;
+  left:11.938rem;
+}
+.App-fillname-women img {
+  display:block;
+  height:5.938rem;
+  width:5.938rem;
+}
+
+
+.App-booking-logo {
+  position: absolute;
+  left:0.438rem;
+  top:1.156rem;
+}
+.App-booking-logo img {
+  display: block;
+  height:1.563rem;
+  width:22.25rem;
+}
+.App-booking-circle-r {
+  position: absolute;
+  left: 0.563rem;
+  top: 6.03rem;
+  width: 12.094rem;
+  height: 12.094rem;
+  background:rgb(235,12,22);
+  -moz-border-radius: 6.047rem;
+  -webkit-border-radius: 6.047rem;
+  border-radius: 6.047rem;
+  z-index:2;
+  mix-blend-mode: multiply;
+}
+.App-booking-circle-r-content {
+  display: block;
+  position: absolute;
+  left:1.781rem;
+  top:8.344rem;
+  height: 6.875rem;
+  width:9.906rem;
+  z-index:3;
+}
+.App-booking-circle-b {
+  position: absolute;
+  left: 2.156rem;
+  top: 14rem;
+  width: 18.938rem;
+  height: 18.938rem;
+  background:rgb(10,41,251);
+  -moz-border-radius: 9.469rem;
+  -webkit-border-radius: 9.469rem;
+  border-radius: 9.469rem;
+  z-index:1;
+  mix-blend-mode: multiply;
+}
+.App-booking-bluetitle {
+  position: absolute;
+  top:18.688rem;
+  left:3.625rem;
+  z-index:3;
+}
+.App-booking-bluetitle img {
+  display: block;
+  width:15.75rem;
+  height: 3.094rem;
+}
+.App-booking-slash {
+  position: absolute;
+  left:5.031rem;
+  top:22.5rem;
+	width: 13.156rem;
+  height: 0.063rem;
+  background-color:white;
+  z-index:3;
+}
+.App-booking-content {
+  position: absolute;
+  left:3.483rem;
+  top:23.344rem;
+  z-index:3;
+}
+.App-booking-content img {
+  display: block;
+  height:3.125rem;
+  width: 16.5rem;;
+}
+.App-booking-QRcode {
+  position: absolute;
+  bottom:3.781rem;
+  left:9.438rem;
+  z-index:3;
+}
+.App-booking-QRcode img {
+  display: block;
+  width:4.625rem;
+  height:4.625rem;
+}
+.App-booking-bookingp {
+  position: absolute;
+  left:7.781rem;
+  top:2.375rem;
+}
+.App-booking-bookingp img {
+  display: block;
+  width: 15.344rem;
+  height:33.125rem;
+}
+
+
+.App-resultA {
+    text-align: center;
+    background-color:rgb(253,170,169);
+    position: absolute;
+    height:100vh;
+    width:100vw;
+    z-index: -100;
+}
+.App-resultA-logo {
+  position: absolute;
+  left:1.5rem;
+  top:0.781rem;
+}
+.App-resultA-logo img {
+  display: block;
+  height:0.906rem;
+  width:12.875rem;
+}
+.App-resultA-background {
+  position: absolute;
+  top: 2.75rem;
+  left:1.563rem;
+  width: 20rem;
+  height: 30.125rem;
+  background-color: white;
+}
+.App-result-typeA {
+  position: absolute;
+  left:0.719rem;
+  top:0.75rem;
+}
+.App-result-typeA img {
+  display: block;
+  width:3.656rem;
+  height:0.813rem;
+}
+.App-result-name {
+  position: absolute;
+  left:0.656rem;
+  top: 1.875rem;
+	width: 12.875rem;
+  height: 1.813rem;
+  background-color: rgb(10,41,251);
+	font-family: GTWalsheimPro-Bold;
+	font-size: 0.75rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.813rem;
+	letter-spacing: 0rem;
+  color: #ffffff;
+  text-align: center;
+}
+.App-result-qrcode {
+  position: absolute;
+  top:0.625rem;
+  left:15.938rem;
+}
+.App-result-qrcode-pattern {
+  display: block;
+  width: 3.531rem;
+  height:3.531rem;
+}
+.App-result-qrcode-title {
+  display: block;
+  width:3.344rem;
+  height:1.25rem;
+  position: relative;
+  top:0.281rem;
+  right:0rem;
 }
 
 
@@ -228,31 +738,6 @@ html{font-size: 32px;}
 
 
 
-
-
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-Result {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {

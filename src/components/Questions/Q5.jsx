@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import coverlogo from '../../asserts/pic/logo.png';
-import q1title from '../../asserts/pic/FashionM&A2.png';
-import q1qtitle from '../../asserts/pic/q2qtitle.png';
+import q1title from '../../asserts/pic/FashionM&A5.png';
+import q5qtitle from '../../asserts/pic/q5qtitle.png';
+import q5a from '../../asserts/pic/q5a.png';
+import q5b from '../../asserts/pic/q5b.png';
+import q5p from '../../asserts/pic/q5p.png';
 
-export class Q2 extends Component{
+export class Q5 extends Component{
     constructor(props){
         super(props);
         
@@ -47,18 +50,21 @@ export class Q2 extends Component{
                     <div className="App-q1-q1title">
                         <img src={q1title} alt="q1title"></img>
                     </div>
-                    <div className="App-q2-q2qtitle">
-                        <img src={q1qtitle} alt="q2qtitle"></img>
+                    <div className="App-q5-q5qtitle">
+                        <img src={q5qtitle} alt="q5qtitle"></img>
                     </div>
-                    <div onClick={this.onAselection} className="App-q1-q1optionA">
-                        <p className="App-q1-q1optionA-content">为我挣10个亿</p>    
+                    <div className="App-q5-q5optioinA" onClick={this.onAselection}>
+                        <img src={q5a} alt='q5a'></img>
                     </div>
-                    <div onClick={this.onBselection} className="App-q1-q1optionB">
-                        <p className="App-q1-q1optionB-content">做我集团的门面</p>
+                    <div className="App-q5-q5optioinB" onClick={this.onBselection}>
+                        <img src={q5b} alt='q5b'></img>
                     </div>
-                    <Link to={'/q3'}>
-                        <div className="App-q2-circle-p"></div>
+                    <Link to={'/fillname'}>
+                        <div className="App-q5-circle-p"></div>
                     </Link>
+                </div>
+                <div className="App-q5-q5p">
+                        <img src={q5p} alt='q5p'></img>
                 </div>
             </div>
         )
