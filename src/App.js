@@ -10,6 +10,9 @@ import {Q5} from './components/Questions/Q5'
 import {FillName} from './components/FillName'
 import {Booking} from './components/Result/Booking'
 import {ResultA} from './components/Result/ResultA'
+import {ResultB} from './components/Result/ResultB'
+import {ResultC} from './components/Result/ResultC'
+import {ResultD} from './components/Result/ResultD'
 
 export default class App extends Component {
   render () {
@@ -25,6 +28,9 @@ export default class App extends Component {
           <Route exact path='/fillname' component={FillName} />
           <Route exact path='/booking/:result/:name' component={Booking} />
           <Route exact path='/resulta/:name' component={ResultA} />
+          <Route exact path='/resultb/:name' component={ResultB} />
+          <Route exact path='/resultc/:name' component={ResultC} />
+          <Route exact path='/resultd/:name' component={ResultD} />
         </div>
       </HashRouter>
     );

@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import logo from '../../asserts/pic/typeAlogo.png';
-import typeA from '../../asserts/pic/typeA.png';
+import typeB from '../../asserts/pic/typeB.png';
 import ResultQR from './ResultQR';
 import ResultName from './ResultName';
-import ResultAtitle from '../../asserts/pic/resultAtitle.png';
-import contentborder from '../../asserts/pic/resultAcontentborder.png';
-import content from '../../asserts/pic/resultAcontent.png';
+import ResultBtitle from '../../asserts/pic/resultBtitle.png';
+import contentborder from '../../asserts/pic/resultBcontentborder.png';
+import content from '../../asserts/pic/resultBcontent.png';
 import share from '../../asserts/pic/resultAshare.png';
-import resultAp from '../../asserts/pic/resultAp.png';
+import resultBp from '../../asserts/pic/resultBp.png';
 
-export class ResultA extends Component{
+export class ResultB extends Component{
     constructor(props){
         super(props)
 
@@ -20,27 +20,27 @@ export class ResultA extends Component{
 
     render() {
         return (
-            <div className="App-resultA">
+            <div className="App-resultB">
                 <div className="App-resultA-logo">
                     <img src={logo} alt='logo'></img>
                 </div>
                 <div className="App-resultA-background">
                     <div className='App-result-typeA'>
-                        <img src={typeA} alt='typea'></img>
+                        <img src={typeB} alt='typea'></img>
                     </div>
                     <ResultName name={this.state.name}></ResultName>
                     <ResultQR></ResultQR>
-                    <div className='App-resultA-title'>
-                        <img src={ResultAtitle} alt='resulttitle'></img>
+                    <div className='App-resultB-title'>
+                        <img src={ResultBtitle} alt='resulttitle'></img>
                     </div>
-                    <img src={contentborder} alt='contentborder' className="App-resultA-content-borderimg"></img>
-                    <img src={content} alt='content' className="App-resultA-contentimg"></img>
-                    <div className="App-resultA-circle-red">
+                    <img src={contentborder} alt='contentborder' className="App-resultB-content-borderimg"></img>
+                    <img src={content} alt='content' className="App-resultB-contentimg"></img>
+                    <div className="App-resultB-circle-red">
                         <img src={share} alt='share'></img>
                     </div>
                 </div>
-                <div className="App-resultA-p">
-                    <img src={resultAp} alt='backgroundpattern'></img>
+                <div className="App-resultB-p">
+                    <img src={resultBp} alt='backgroundpattern'></img>
                 </div>
             </div>
         )
