@@ -18,6 +18,10 @@ export class ResultA extends Component{
         }
     }
 
+    componentDidMount(){
+        window.createHTMLImage();
+    }
+
     render() {
         return (
             <div className="App-resultA">
