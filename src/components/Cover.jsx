@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import coverlogo from '../asserts/pic/logo.png';
 import coverf from '../asserts/pic/FashionM&A.png';
 import coverp from '../asserts/pic/cover.png';
+import start from '../asserts/pic/start.png'
+import covertitle from '../asserts/pic/covertitle.png';
+import covercontent from '../asserts/pic/covercontent.png';
 
 export class Cover extends Component {    
     render() {
@@ -16,19 +19,13 @@ export class Cover extends Component {
                     <img src={coverf} alt="altcoverlogo"></img>
                 </div>
                 <div className="App-Cover-circle-b">
-                    <div className = "cover-circle-b-title">
-                        <p>时尚并购</p>
-                        <p>段位测试</p>
-                    </div>
+                    <img src={covertitle} alt='covertitle' className="App-Cover-circle-b-title"></img>
                     <div className="cover-slash"></div>
-                    <div className="cover-circle-b-content">
-                        <p>作为商界大亨，此刻的你拥有无尽的财富与资本。你正谋划着通过投资并购建立自己的时尚帝国：</p>
-                    </div>
+                    <img src={covercontent} alt='covercontent' className="App-Cover-circle-b-content"></img>
                 </div>
                 <Link to={'/q1'}>
                     <div className="App-Cover-circle-p">
-                        <p className="Cover-circle-p-title">启动收购</p>
-                        <p className="Cover-circle-p-content">start</p>
+                       <img src={start} alt='start'></img>
                     </div>
                 </Link>
                 <div className="App-Cover-P">

@@ -1,5 +1,3 @@
-html{font-size: 16px;}
-
 .App {
   text-align: center;
   background-color:rgb(241,237,228);
@@ -11,234 +9,210 @@ html{font-size: 16px;}
 
 .App-cover-logo {
   position: absolute;
-  top: 1.03rem;
-  left: 0.41rem;
+  top: 0.466rem;
+  left: 0.176rem;
 }
 .App-cover-logo img {
   display: block;
-  height: 0.91rem;
-  width:12.88rem;
+  height: 0.392rem;
+  width:5.568rem;
 }
 .App-cover-logo-f {
   position: absolute;
-  top: 2.59rem;
-  left: 0.34rem;
+  top: 1.122rem;
+  left: 0.149rem;
 }
 .App-cover-logo-f img {
   display: block;
-  height: 2.78rem;
-  width:22.47rem
+  height: 1.203rem;
+  width:9.716rem
 }
 .App-Cover-P {
   position: absolute;
-  left: 7.19rem;
-  top: 3.75rem;
+  left: 3.108rem;
+  bottom:0;
 }
 .App-Cover-P img {
   display: block;
-  height:31.75rem;
-  width:15.94rem;
+  height:13.73rem;
+  width:6.892rem;
 }
 .App-Cover-circle-b {
   position: absolute;
-  left: 0.81rem;
-  bottom: 5.53rem;
-  width: 16.97rem;
-  height: 16.97rem;
+  left: 0.35rem;
+  bottom: 2.39rem;
+  width: 7.338rem;
+  height: 7.338rem;
   opacity: 0.8;
   background:rgb(10,41,251);
-  -moz-border-radius: 8.485rem;
-  -webkit-border-radius: 8.485rem;
-  border-radius: 8.485rem;
+  -moz-border-radius: 3.669rem;
+  -webkit-border-radius: 3.669rem;
+  border-radius: 3.669rem;
   z-index: 2;
 }
-.cover-circle-b-title {
-  font-size: 2.34rem;
-  color:white;
-  font-weight: normal;
-	font-stretch: normal;
-  line-height: 0.9rem;
-	letter-spacing: 0rem;
+.App-Cover-circle-b-title {
+  display: block;
+  width:4.014rem;
+  height:2.135rem;
+  position: absolute;
+  left:1.662rem;
+  top:0.946rem;
+  opacity: 1;
 }
 .cover-slash {
-  position: relative;
-  left: 2.22rem;
-  width: 12.59rem;
-	height: 0.25rem;
-	background-color: #fdaaa9;
+  position: absolute;
+  left: 0.959rem;
+  top:3.378rem;
+  width: 5.444rem;
+	height: 0.108rem;
+  background-color: #fdaaa9;
+  opacity: 1;
 }
-.cover-circle-b-content {
-  position: relative;
-  left:0.78rem;
-  width: 15.38rem;
-	height: 3.44rem;
-  font-size: 0.81rem;
-  color:white;
-  font-weight: normal;
-	font-stretch: normal;
-  line-height: 0.9rem;
-  letter-spacing: 0rem;
-  text-align: center;
+.App-Cover-circle-b-content {
+  display: block;
+  width:6.649rem;
+  height:1.324rem;
+  position: absolute;
+  left:0.338rem;
+  top:3.865rem;
+  opacity: 1;
 }
+
 .App-Cover-circle-p {
   position: absolute;
-  left: 8.16rem;
-  bottom: 3.72rem;
-  width: 6rem;
-  height: 6rem;
+  left: 3.527rem;
+  bottom: 1.608rem;;
+  width: 2.595rem;
+  height: 2.595rem;
   background:rgb(253,170,169);
-  -moz-border-radius: 3rem;
-  -webkit-border-radius: 3rem;
-  border-radius: 3rem;
+  -moz-border-radius: 1.795rem;
+  -webkit-border-radius: 1.795rem;
+  border-radius: 1.795rem;
   z-index: 3;
 }
-.Cover-circle-p-title
-{
-  position: relative;
-  top:0.8rem;
-  left:0.53rem;
-	width: 5rem;
-	height: 1.19rem;
-	font-family: SourceHanSerifCN-Bold;
-	font-size: 1.25rem;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 0.9rem;
-	letter-spacing: 0rem;
-	color: #0a29fb;
+.App-Cover-circle-p img{
+  display:block;
+  width:2.135rem;
+  height:0.919rem;
+  position:absolute;
+  left:0.23rem;
+  top:0.878rem;
 }
-.Cover-circle-p-content
-{
-  position: relative;
-  left:1.88rem;
-  bottom:1.2rem;
-	width: 1.94rem;
-	height: 0.47rem;
-	font-family: GTWalsheimPro-Bold;
-	font-size: 0.65rem;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 2.72rem;
-	letter-spacing: 0rem;
-	color: #0a29fb;
-}
-
-
 .App-q1-logo {
   position: absolute;
-  top: 0.78rem;
-  left: 1.5rem;
+  top: 0.337rem;
+  left: 0.649rem;
 }
 .App-q1-logo img {
   display: block;
-  height: 0.91rem;
-  width:12.88rem;
+  height: 0.394rem;
+  width:5.57rem;
 }
 .App-q1-background {
   position: relative;
-  top: 2.69rem;
-  left: 1.56rem;
-  right:1.56rem;
-  bottom:2.63rem;
+  top: 1.163rem;
+  left: 0.675rem;
+  right:0.675rem;
+  bottom:1.137rem;
   background-color: white;
-  height: 30.19rem;
-  width:20rem;
+  height: 13.055rem;
+  width:8.649rem;
 }
 .App-q1-q1title {
   position: relative;
-  left: 1.31rem;
-  top: 0.69rem;
+  left: 0.566rem;
+  top: 0.298rem;
 }
 .App-q1-q1title img {
   display: block;
-  width:6.31rem;
-  height:1.13rem
+  width:2.729rem;
+  height:0.486rem
 }
 .App-q1-q1qtitle {
   position: relative;
-  left:1.09rem;
-  top:1.84rem;
+  left:0.471rem;
+  top:0.796rem;
 }
 .App-q1-q1qtitle img {
   display: block;
-  width:17rem;
-  height:5.31rem;
+  width:7.351rem;
+  height:2.296rem;
 }
 .App-q1-q1p{
   position: absolute;
-  top:9.16rem;
-  left:5.38rem;
-  width:17.75rem;
+  top:3.961rem;
+  left:2.326rem;
+  width:7.676rem;
   z-index: 2;
   pointer-events: none;
 }
 .App-q1-q1p img{
   display: block;
-  width:17.75rem;
+  width:7.676rem;
 }
 .App-q1-q1optionA {
   position: absolute;
-  top:11.75rem;
-  left:0.91rem;
+  top:5.081rem;
+  left:0.394rem;
   background: url(./asserts/pic/selectA.png) no-repeat;
   background-size:100% 100%;
-  width:10.53rem;
-  height:2.53rem;
+  width:4.554rem;
+  height:1.094rem;
 }
 .App-q1-q1optionB {
   position: absolute;
-  top:15.72rem;
-  left:0.91rem;
+  top:6.798rem;
+  left:0.394rem;
   background: url(./asserts/pic/selectB.png) no-repeat;
   background-size:100% 100%;
-  width:10.53rem;
-  height:2.53rem;
+  width:4.664rem;
+  height:1.094rem;
 }
 .App-q1-circle-p {
   position: absolute;
-  left: 1.72rem;
-  bottom: 1.44rem;
-  width: 4.44rem;
-  height: 4.44rem;
+  left: 0.744rem;
+  bottom: 0.623rem;
+  width: 1.920rem;
+  height: 1.920rem;
   background:rgb(253,170,169);
-  -moz-border-radius: 2.22rem;
-  -webkit-border-radius: 2.22rem;
-  border-radius: 2.22rem;
+  -moz-border-radius: 0.960rem;
+  -webkit-border-radius: 0.960rem;
+  border-radius: 0.960rem;
   z-index: 1;
 }
 .App-q1-circle-p img{
   display: block;
-  width:3.563rem;
-  height:1.906rem;
+  width:1.541rem;
+  height:0.824rem;
   position: absolute;
-  left:0.375rem;
-  top:1.406rem;
+  left:0.162rem;
+  top:0.608rem;
 }
 .App-q1-q1optionA-content {
   position: absolute;
-  left:2.94rem;
-  bottom:0.22rem;
-  width: 5.8rem;
-	height: 0.91rem;
+  left:1.271rem;
+  bottom:0.095rem;
+  width: 2.508rem;
+	height: 0.394rem;
 	font-family: SourceHanSansCN-Medium;
-	font-size: 0.94rem;
+	font-size: 0.406rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 1.34rem;
+	line-height: 0.579rem;
 	letter-spacing: 0rem;
 	color: #ffffff;
 }
 .App-q1-q1optionB-content {
   position: absolute;
-  left:2.94rem;
-  bottom:0.22rem;
-  width: 6.8rem;
-	height: 0.91rem;
+  left:1.271rem;
+  bottom:0.095rem;
+  width: 2.94rem;
+	height: 0.394rem;
 	font-family: SourceHanSansCN-Medium;
-	font-size: 0.94rem;
+	font-size: 0.394rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 1.34rem;
+	line-height: 0.579rem;
 	letter-spacing: 0rem;
 	color: #ffffff;
 }
@@ -246,379 +220,379 @@ html{font-size: 16px;}
 
 .App-q2-q2qtitle {
   position: absolute;
-  left: 1.094rem;
-  top: 2.531rem;
+  left: 0.473rem;
+  top: 1.094rem;
 }
 .App-q2-q2qtitle img {
   display: block;
-  width:14.094rem;
-  height:5.313rem;
+  width:6.09rem;
+  height:2.298rem;
 }
 .App-q2-circle-p{
   position: absolute;
-  left: 7.594rem;
-  bottom: 0.781rem;
-  width: 4.44rem;
-  height: 4.44rem;
+  left: 3.284rem;
+  bottom: 0.338rem;
+  width: 1.92rem;
+  height: 1.92rem;
   background:rgb(253,170,169);
-  -moz-border-radius: 2.22rem;
-  -webkit-border-radius: 2.22rem;
-  border-radius: 2.22rem;
+  -moz-border-radius: 0.96rem;
+  -webkit-border-radius: 0.96rem;
+  border-radius: 0.96rem;
   z-index: 1;
 }
 .App-q2-circle-p img{
   display: block;
-  width:3.563rem;
-  height:1.906rem;
+  width:1.541rem;
+  height:0.824rem;
   position: absolute;
-  left:0.375rem;
-  top:1.406rem;
+  left:0.162rem;
+  top:0.608rem;
 }
 .App-q2-optionA {
   position: absolute;
-  left:0.719rem;
-  top:10.188rem;
+  left:0.311rem;
+  top:4.406rem;
 }
 .App-q2-optionA-title{
   display: block;
-  width:1.594rem;
-  height:6.406rem;
+  width:0.689rem;
+  height:2.77rem;
 }
 .App-q2-optionB {
   position: absolute;
-  left:0.719rem;
-  top:17.813rem;
+  left:0.311rem;
+  top:7.703rem;
 }
 .App-q2-optionB-title{
   display: block;
-  width:1.594rem;
-  height:6.406rem;
+  width:0.689rem;
+  height:2.77rem;
 }
 .App-q2-optionA-content1 {
   display: block;
-  width:16.719rem;
-  height:1.813rem;
+  width:7.23rem;
+  height:0.784rem;
   position: absolute;
-  left: 1.875rem;
+  left: 0.811rem;
   top:0;
 }
 .App-q2-optionA-content2 {
   display: block;
-  width:15.656rem;
-  height:1.844rem;
+  width:6.77rem;
+  height:0.797rem;
   position: absolute;
-  left: 1.875rem;
-  top:2.281rem;
+  left: 0.811rem;
+  top:0.986rem;
 }
 .App-q2-optionA-content3 {
   display: block;
-  width:15.156rem;
-  height:1.813rem;
+  width:6.554rem;
+  height:0.784rem;
   position: absolute;
-  left: 1.875rem;
-  top:4.594rem;
+  left: 0.811rem;
+  top:1.987rem;
 }
 .App-q2-optionB-content1 {
   display: block;
-  width:12.969rem;
-  height:1.813rem;
+  width:5.608rem;
+  height:0.784rem;
   position: absolute;
-  left: 1.875rem;
+  left: 0.811rem;
   top:0;
 }
 .App-q2-optionB-content2 {
   display: block;
-  width:12.625rem;
-  height:1.844rem;
+  width:5.459rem;
+  height:0.797rem;
   position: absolute;
-  left: 1.875rem;
-  top:2.281rem;
+  left: 0.811rem;
+  top:0.986rem;
 }
 .App-q2-optionB-content3 {
   display: block;
-  width:12rem;
-  height:1.813rem;
+  width:5.189rem;
+  height:0.784rem;
   position: absolute;
-  left: 1.875rem;
-  top:4.594rem;
+  left: 0.811rem;
+  top:1.987rem;
 }
 
 
 .App-q3-background {
   position: absolute;
-  top: 2.688rem;
-  left: 1.563rem;
+  top: 1.162rem;
+  left: 0.676rem;
   background-color: white;
-  height: 30.188rem;
-  width:20rem;
+  height: 13.054rem;
+  width:8.649rem;
   background: url(./asserts/pic/q3background.png) no-repeat;
   background-size:100% 100%;
 }
 .App-q3-q3qtitle {
   position: relative;
-  left:1.09rem;
-  top:1.91rem;
+  left:0.471rem;
+  top:0.826rem;
 }
 .App-q3-q3qtitle img {
   display: block;
-  width:16.19rem;
-  height:3.47rem;
+  width:7rem;
+  height:1.501rem;
 }
 .App-q3-circle-p{
   position: absolute;
-  left: 14rem;
-  bottom: 2rem;
-  width: 4.44rem;
-  height: 4.44rem;
+  left: 5.878rem;
+  bottom: 0.973rem;
+  width: 1.92rem;
+  height: 1.92rem;
   background:rgb(253,170,169);
-  -moz-border-radius: 2.22rem;
-  -webkit-border-radius: 2.22rem;
-  border-radius: 2.22rem;
+  -moz-border-radius: 0.96rem;
+  -webkit-border-radius: 0.96rem;
+  border-radius: 0.96rem;
   z-index: 1;
 }
 .App-q3-circle-p img{
   display: block;
-  width:3.563rem;
-  height:1.906rem;
+  width:1.541rem;
+  height:0.824rem;
   position: absolute;
-  left:0.375rem;
-  top:1.406rem;
+  left:0.162rem;
+  top:0.608rem;
 }
 .App-q3-q1optionA {
   position: absolute;
-  left:1rem;
-  top:22.469rem;
+  left:0.432rem;
+  bottom:2.243rem;
 }
 .App-q3-q1optionA img {
   display: block;
-  width: 9.3rem;
-  height: 2.7rem;
+  width: 3.946rem;
+  height: 1.095rem;
 }
 .App-q3-q1optionB {
   position: absolute;
-  left:1rem;
-  top:26.438rem;
+  left:0.432rem;
+  bottom:0.527rem;
 }
 .App-q3-q1optionB img {
   display: block;
-  width: 9.3rem;
-  height: 2.7rem;
+  width: 3.946rem;
+  height: 1.095rem;
 }
 .App-q3-apattern {
   position: absolute;
-  top:9rem;
-  right:2rem;
+  top:3.676rem;
+  right:0.757rem;
 }
 .App-q3-apattern img{
   display:block;
-  width:5rem;
-  height:6rem;
+  width:2.149rem;
+  height:2.473rem;
 }
 .App-q3-bpattern {
   position: absolute;
-  top:11.813rem;
-  left:3rem;
+  top:5.108rem;
+  left:1.297rem;
 }
 .App-q3-bpattern img{
   display:block;
-  width:5.688rem;
-  height:10.344rem;
+  width:2.459rem;
+  height:4.473rem;
 }
 
 
 .App-q4-q4qtitle {
   position: absolute;
-  left: 1.063rem;
-  top: 2.531rem;
+  left: 0.46rem;
+  top: 1.094rem;
 }
 .App-q4-q4qtitle img {
   display: block;
-  width:15.344rem;
-  height:5.281rem;
+  width:6.635rem;
+  height:2.284rem;
 }
 .App-q4-q4acontent {
   position: absolute;
-  top:9rem;
-  left:1.813rem;
+  top:3.892rem;
+  left:0.784rem;
   z-index: 1;
 }
 .App-q4-q4acontent img{
   display:block;
-  height:13.594rem;
-  width:3.594rem;
+  height:5.878rem;
+  width:1.554rem;
 }
 .App-q4-q4apattern {
   position: absolute;
-  top:10.469rem;
-  left:5.781rem;
+  top:4.527rem;
+  left:2.5rem;
   z-index: 1;
 }
 .App-q4-q4apattern img{
   display:block;
-  height:12.125rem;
-  width:4.156rem;
+  height:5.243rem;
+  width:1.797rem;
 }
 .App-q4-q4aoption {
   position: absolute;
-  top:22.75rem;
-  left:1.781rem;
+  top:9.838rem;
+  left:0.77rem;
 }
 .App-q4-q4aoption img{
   display: block;
-  width:7.594rem;
-  height:2.281rem;
+  width:3.284rem;
+  height:0.986rem;
 }
 .App-q4-q4bcontent {
   position: absolute;
-  top:12.563rem;
-  left:11.594rem;
+  top:5.433rem;
+  left:5.014rem;
 }
 .App-q4-q4bcontent img{
   display:block;
-  height:10.031rem;
-  width:3.594rem;
+  height:4.338rem;
+  width:1.554rem;
 }
 .App-q4-q4bpattern {
   position: absolute;
-  top:13.469rem;
-  left:15.594rem;
+  top:5.824rem;
+  left:6.743rem;
 }
 .App-q4-q4bpattern img{
   display:block;
-  height:9.125rem;
-  width:4rem;
+  height:3.946rem;
+  width:1.73rem;
 }
 .App-q4-q4boption {
   position: absolute;
-  top:22.75rem;
-  left:11.625rem;
+  top:9.838rem;
+  left:5.027rem;
 }
 .App-q4-q4boption img{
   display: block;
-  width:7.531rem;
-  height:2.281rem;
+  width:3.257rem;
+  height:0.986rem;
 }
 .App-q4-circle-p{
   position: absolute;
-  left: 8.125rem;
-  bottom: 0.25rem;
-  width: 4.44rem;
-  height: 4.44rem;
+  left: 3.514rem;
+  bottom: 0.108rem;
+  width: 1.92rem;
+  height: 1.92rem;
   background:rgb(253,170,169);
-  -moz-border-radius: 2.22rem;
-  -webkit-border-radius: 2.22rem;
-  border-radius: 2.22rem;
+  -moz-border-radius: 0.96rem;
+  -webkit-border-radius: 0.96rem;
+  border-radius: 0.96rem;
   z-index: 1;
 }
 .App-q4-circle-p img{
   display: block;
-  width:3.563rem;
-  height:1.906rem;
+  width:1.541rem;
+  height:0.824rem;
   position: absolute;
-  left:0.375rem;
-  top:1.406rem;
+  left:0.162rem;
+  top:0.608rem;
 }
 .App-q4-q4percent {
   position: absolute;
-  left:0.719rem;
-  top:11.469rem;
+  left:0.311rem;
+  top:4.96rem;
 }
 .App-q4-100per{
   position: absolute;
   left:0;
   top:0;
-  width:2rem;
-  height:0.563rem;
+  width:0.865rem;
+  height:0.244rem;
 }
 .App-q4-70per{
   position: absolute;
-  left:0.469rem;
-  top:3.594rem;
-  width:1.5rem;
-  height:0.563rem;
+  left:0.203rem;
+  top:1.554rem;
+  width:0.649rem;
+  height:0.243rem;
 }
 .App-q4-10per{
   position: absolute;
-  left:0.469rem;
-  top:13.25rem;
-  width:1.406rem;
-  height:0.563rem;
+  left:0.203rem;
+  top:5.73rem;
+  width:0.608rem;
+  height:0.243rem;
 }
 .App-q4-100per-s {
   position: absolute;
-  left:2.188rem;
-  top:0.188rem;
-  width:4.063em;
-  height:0.031rem;
+  left:0.946rem;
+  top:0.081rem;
+  width:1.757rem;
+  height:0.013rem;
 }
 .App-q4-70per-s {
   position: absolute;
-  left:2.188rem;
-  top:3.781rem;
-  width:10.25em;
-  height:0.031rem;
+  left:0.946rem;
+  top:1.635rem;
+  width:4.432rem;
+  height:0.014rem;
 }
 
 
 .App-q5-q5qtitle {
   position: absolute;
-  left: 1.063rem;
-  top: 2.531rem;
+  left: 0.46rem;
+  top: 1.094rem;
 }
 .App-q5-q5qtitle img {
   display: block;
-  width:16.969rem;
-  height:5.219rem;
+  width:7.338rem;
+  height:2.257rem;
 }
 .App-q5-circle-p{
   position: absolute;
-  left: 11.813rem;
-  bottom: 6.094rem;
-  width: 4.44rem;
-  height: 4.44rem;
+  left: 5.108rem;
+  bottom: 2.635rem;
+  width: 1.92rem;
+  height: 1.92rem;
   background:rgb(253,170,169);
-  -moz-border-radius: 2.22rem;
-  -webkit-border-radius: 2.22rem;
-  border-radius: 2.22rem;
+  -moz-border-radius: 0.96rem;
+  -webkit-border-radius: 0.96rem;
+  border-radius: 0.96rem;
   z-index: 1;
 }
 .App-q5-circle-p img{
   display: block;
-  width:3.563rem;
-  height:1.906rem;
+  width:1.541rem;
+  height:0.824rem;
   position: absolute;
-  left:0.375rem;
-  top:1.406rem;
+  left:0.162rem;
+  top:0.608rem;
 }
 .App-q5-q5optioinA {
   position: absolute;
-  left:1.125rem;
-  top: 9.719rem;
+  left:0.486rem;
+  top: 4.203rem;
 }
 .App-q5-q5optioinA img {
   display:block;
-  height:2.531rem;
-  width:14.5rem;
+  height:1.094rem;
+  width:6.27rem;
 }
 .App-q5-q5optioinB {
   position: absolute;
-  left: 2.719rem;
-  top: 13.406rem;
+  left: 1.176rem;
+  top: 5.797rem;
 }
 .App-q5-q5optioinB img {
   display:block;
-  height:2.531rem;
-  width:16.313rem;
+  height:1.094rem;
+  width:7.054rem;
 }
 .App-q5-q5p {
   position: absolute;
   left:0;
-  top: 18.219rem;
+  top: 7.878rem;
 }
 .App-q5-q5p img{
   display: block;
-  width:23.125rem;
-  height: 17.281rem;
+  width:10rem;
+  height: 7.473rem;
 }
 
 
@@ -633,191 +607,191 @@ html{font-size: 16px;}
 }
 .App-fillname-logo {
   position: absolute;
-  top: 0.781rem;
-  left:1.5rem;
+  top: 0.338rem;
+  left:0.649rem;
 }
 .App-fillname-logo img{
   display: block;
-  height:0.906rem;
-  width:12.875rem;
+  height:0.392rem;
+  width:5.568rem;
 }
 .App-fillname-border {
   position: absolute;
-  top:2.688rem;
-  left:1.563rem;
-  width:20rem;
-  height:30.188rem;
-  border: solid 0.031rem white;
+  top:1.162rem;
+  left:0.676rem;
+  width:8.649rem;
+  height:13.054rem;
+  border: solid 0.013rem white;
 }
 .App-fillname-title {
   position: absolute;
-  top:4.906rem;
-  left: 6.334rem;
+  top:2.122rem;
+  left: 2.739rem;
 }
 .App-fillname-title img {
   display: block;
-  height:1.156rem;
-  width: 7.188rem;
+  height:0.5rem;
+  width: 3.109rem;
 }
 .App-fillname-circle {
   position: absolute;
-  left: 7.25rem;
-  bottom: 2.313rem;
-  width: 5.469rem;
-  height: 5.469rem;
+  left: 3.135rem;
+  bottom: 1rem;
+  width: 2.365rem;
+  height: 2.365rem;
   background:rgb(253,170,169);
-  -moz-border-radius: 2.735rem;
-  -webkit-border-radius: 2.735rem;
-  border-radius: 2.735rem;
+  -moz-border-radius: 1.183rem;
+  -webkit-border-radius: 1.183rem;
+  border-radius: 1.183rem;
   z-index: 1;
 }
 .App-fillname-circle img {
   display: block;
-  width:4.813rem;
-  height:3.406rem;
+  width:2.081rem;
+  height:1.473rem;
   position:absolute;
-  left:0.281rem;
-  top:1.031rem;
+  left:0.122rem;
+  top:0.446rem;
 }
 .App-fillname-nametitle {
   position: absolute;
-  left: 6.25rem;
-  top: 15.406rem;
+  left: 2.703rem;
+  top: 6.662rem;
 }
 .App-fillname-nametitle img{
   display: block;
-  width:7.219rem;
-  height:1.156rem;
+  width:3.122rem;
+  height:0.5rem;
 }
 .App-fillname-fill {
   position: absolute;
-  top:17.438rem;
-  left:2.219rem;
+  top:7.541rem;
+  left:0.96rem;
 }
 .App-fillname-fill input{
   display: block;
-  width: 15.656rem;
-  height: 2.531rem;
-  border:solid 0.031rem #0a29fb;
+  width: 6.77rem;
+  height: 1.094rem;
+  border:solid 0.013rem #0a29fb;
 }
 .App-fillname-man {
   position: absolute;
-  top:7.25rem;
-  left:2.219rem;
+  top:3.135rem;
+  left:0.96rem;
 }
 .App-fillname-man img {
   display:block;
-  height:5.938rem;
-  width:5.938rem;
+  height:2.568rem;
+  width:2.568rem;
 }
 .App-fillname-women {
   position: absolute;
-  top:7.25rem;
-  left:11.938rem;
+  top:3.135rem;
+  left:5.162rem;
 }
 .App-fillname-women img {
   display:block;
-  height:5.938rem;
-  width:5.938rem;
+  height:2.568rem;
+  width:2.568rem;
 }
 
 
 .App-booking-logo {
   position: absolute;
-  left:0.438rem;
-  top:1.156rem;
+  left:0.189rem;
+  top:0.5rem;
 }
 .App-booking-logo img {
   display: block;
-  height:1.563rem;
-  width:22.25rem;
+  height:0.676rem;
+  width:9.622rem;
 }
 .App-booking-circle-r {
   position: absolute;
-  left: 0.563rem;
-  top: 6.03rem;
-  width: 12.094rem;
-  height: 12.094rem;
+  left: 0.243rem;
+  top: 2.608rem;
+  width: 5.23rem;
+  height: 5.23rem;
   background:rgb(235,12,22);
-  -moz-border-radius: 6.047rem;
-  -webkit-border-radius: 6.047rem;
-  border-radius: 6.047rem;
+  -moz-border-radius: 2.615rem;
+  -webkit-border-radius: 2.615rem;
+  border-radius: 2.615rem;
   z-index:2;
   mix-blend-mode: multiply;
 }
 .App-booking-circle-r-content {
   display: block;
   position: absolute;
-  left:1.781rem;
-  top:8.344rem;
-  height: 6.875rem;
-  width:9.906rem;
+  left:0.77rem;
+  top:3.608rem;
+  height: 2.973rem;
+  width:4.284rem;
   z-index:3;
 }
 .App-booking-circle-b {
   position: absolute;
-  left: 2.156rem;
-  top: 14rem;
-  width: 18.938rem;
-  height: 18.938rem;
+  left: 0.932rem;
+  top: 6.054rem;
+  width: 8.189rem;
+  height: 8.189rem;
   background:rgb(10,41,251);
-  -moz-border-radius: 9.469rem;
-  -webkit-border-radius: 9.469rem;
-  border-radius: 9.469rem;
+  -moz-border-radius: 4.095rem;
+  -webkit-border-radius: 4.095rem;
+  border-radius: 4.095rem;
   z-index:1;
   mix-blend-mode: multiply;
 }
 .App-booking-bluetitle {
   position: absolute;
-  top:18.688rem;
-  left:3.625rem;
+  top:8.081rem;
+  left:1.568rem;
   z-index:3;
 }
 .App-booking-bluetitle img {
   display: block;
-  width:15.75rem;
-  height: 3.094rem;
+  width:6.811rem;
+  height: 1.338rem;
 }
 .App-booking-slash {
   position: absolute;
-  left:5.031rem;
-  top:22.5rem;
-	width: 13.156rem;
-  height: 0.063rem;
+  left:2.176rem;
+  top:9.73rem;
+	width: 5.689rem;
+  height: 0.027rem;
   background-color:white;
   z-index:3;
 }
 .App-booking-content {
   position: absolute;
-  left:3.483rem;
-  top:23.344rem;
+  left:1.506rem;
+  top:10.09rem;
   z-index:3;
 }
 .App-booking-content img {
   display: block;
-  height:3.125rem;
-  width: 16.5rem;;
+  height:1.351rem;
+  width: 7.135rem;;
 }
 .App-booking-QRcode {
   position: absolute;
-  bottom:3.781rem;
-  left:9.438rem;
+  top:11.716rem;
+  left:4.081rem;
   z-index:3;
 }
 .App-booking-QRcode img {
   display: block;
-  width:4.625rem;
-  height:4.625rem;
+  width:2rem;
+  height:2rem;
 }
 .App-booking-bookingp {
   position: absolute;
-  left:7.781rem;
-  top:2.375rem;
+  left:3.365rem;
+  bottom:0;
 }
 .App-booking-bookingp img {
   display: block;
-  width: 15.344rem;
-  height:33.125rem;
+  width: 6.635rem;
+  height:14.324rem;
 }
 
 
@@ -830,124 +804,124 @@ html{font-size: 16px;}
 }
 .App-resultA-logo {
   position: absolute;
-  left:1.5rem;
-  top:0.781rem;
+  left:0.649rem;
+  top:0.338rem;
 }
 .App-resultA-logo img {
   display: block;
-  height:0.906rem;
-  width:12.875rem;
+  height:0.392rem;
+  width:5.568rem;
 }
 .App-resultA-background {
   position: absolute;
-  top: 2.75rem;
-  left:1.563rem;
-  width: 20rem;
-  height: 30.125rem;
+  top: 1.189rem;
+  left:0.676rem;
+  width: 8.649rem;
+  height: 13.027rem;
   background-color: white;
 }
 .App-result-typeA {
   position: absolute;
-  left:0.719rem;
-  top:0.75rem;
+  left:0.311rem;
+  top:0.324rem;
 }
 .App-result-typeA img {
   display: block;
-  width:3.656rem;
-  height:0.813rem;
+  width:1.581rem;
+  height:0.352rem;
 }
 .App-result-name {
   position: absolute;
-  left:0.656rem;
-  top: 1.875rem;
-	width: 12.875rem;
-  height: 1.813rem;
+  left:0.284rem;
+  top: 0.811rem;
+	width: 5.568rem;
+  height: 0.784rem;
   background-color: rgb(10,41,251);
 	font-family: GTWalsheimPro-Bold;
-	font-size: 0.75rem;
+	font-size: 0.324rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 1.813rem;
+	line-height: 0.784rem;
 	letter-spacing: 0rem;
   color: #ffffff;
   text-align: center;
 }
 .App-result-qrcode {
   position: absolute;
-  top:0.625rem;
-  left:15.938rem;
+  top:0.268rem;
+  left:6.892rem;
 }
 .App-result-qrcode-pattern {
   display: block;
-  width: 3.531rem;
-  height:3.531rem;
+  width: 1.527rem;
+  height:1.527rem;
 }
 .App-result-qrcode-title {
   display: block;
-  width:3.344rem;
-  height:1.25rem;
+  width:1.446rem;
+  height:0.541rem;
   position: relative;
-  top:0.281rem;
+  top:0.122rem;
   right:0rem;
 }
 .App-resultA-title {
   position: absolute;
-  left:0.791rem;
-  top:4.625rem;
+  left:0.342rem;
+  top:2rem;
 }
 .App-resultA-title img {
   display: block;
-  width: 14.875rem;
-  height:3.844rem;
+  width: 6.432rem;
+  height:1.662rem;
 }
 .App-resultA-content-borderimg {
   position: absolute;
-  left:5.531rem;
-  bottom:6.469rem;
+  left:2.392rem;
+  bottom:2.797rem;
   display:block;
-  width:13.719rem;
-  height:7.594rem;
+  width:5.933rem;
+  height:3.284rem;
   z-index:2;
 }
 .App-resultA-contentimg {
   display:block;
-  width:9.75rem;
-  height:4.125rem;
+  width:4.216rem;
+  height:1.784rem;
   position: absolute;
-  left:7.719rem;
-  bottom:7.938rem;
+  left:3.338rem;
+  bottom:3.433rem;
   z-index:2;
 }
 .App-resultA-circle-red {
   position: absolute;
-  left: 13.813rem;
-  bottom:0.594rem;
-  width: 5.063rem;
-  height: 5.063rem;
+  left: 5.973rem;
+  bottom:0.257rem;
+  width: 2.189rem;
+  height: 2.189rem;
   background:#eb0c16;
-  -moz-border-radius: 2.532rem;
-  -webkit-border-radius: 2.532rem;
-  border-radius: 2.532rem;
+  -moz-border-radius: 1.095rem;
+  -webkit-border-radius: 1.095rem;
+  border-radius: 1.095rem;
   z-index:2;
 }
 .App-resultA-circle-red img{
   display: block;
-  width:3.969rem;
-  height:2.969rem;
+  width:1.716rem;
+  height:1.284rem;
   position: absolute;
-  left:0.5rem;
-  top:0.844rem
+  left:0.216rem;
+  top:0.365rem
 }
 .App-resultA-p {
   position: absolute;
   left:0;
-  bottom:1.5rem;
+  bottom:0.649rem;
   z-index: 1;
 }
 .App-resultA-p img{
   display: block;
-  width:19.625rem;
-  height:20.875rem;
+  width:8.486rem;
+  height:9.027rem;
 }
 
 
@@ -960,51 +934,51 @@ html{font-size: 16px;}
 }
 .App-resultB-title {
   position: absolute;
-  left:0.688rem;
-  top:4.563rem;
+  left:0.298rem;
+  top:1.973rem;
 }
 .App-resultB-title img{
   display: block;
-  width: 13rem;
-  height:3.813rem;
+  width: 5.622rem;
+  height:1.649rem;
 }
 .App-resultB-content-borderimg {
   position: absolute;
-  left:2.094rem;
-  top:9.969rem;
+  left:0.906rem;
+  top:4.311rem;
   display:block;
-  width:16.656rem;
-  height:7.469rem;
+  width:7.203rem;
+  height:3.23rem;
   z-index:2;
 }
 .App-resultB-contentimg {
   display:block;
-  width:10.844rem;
-  height:4.125rem;
+  width:4.689rem;
+  height:1.784rem;
   position: absolute;
-  left:4.375rem;
-  top:11.969rem;
+  left:1.892rem;
+  top:5.176rem;
   z-index:2;
 }
 .App-resultB-circle-red {
   position: absolute;
-  left: 1.219rem;
-  bottom:1.656rem;
-  width: 5.063rem;
-  height: 5.063rem;
+  left: 0.527rem;
+  bottom:0.716rem;
+  width: 2.189rem;
+  height: 2.189rem;
   background:#eb0c16;
-  -moz-border-radius: 2.532rem;
-  -webkit-border-radius: 2.532rem;
-  border-radius: 2.532rem;
+  -moz-border-radius: 1.095rem;
+  -webkit-border-radius: 1.095rem;
+  border-radius: 1.095rem;
   z-index:2;
 }
 .App-resultB-circle-red img{
   display: block;
-  width:3.969rem;
-  height:2.969rem;
+  width:1.716rem;
+  height:1.284rem;
   position: absolute;
-  left:0.5rem;
-  top:0.844rem
+  left:0.216rem;
+  top:0.365rem
 }
 .App-resultB-p {
   position: absolute;
@@ -1013,8 +987,8 @@ html{font-size: 16px;}
 }
 .App-resultB-p img {
   display: block;
-  height:17rem;
-  width:19.594rem;
+  height:7.351rem;
+  width:8.473rem;
 }
 
 
@@ -1027,48 +1001,48 @@ html{font-size: 16px;}
 }
 .App-resultC-title {
   position: absolute;
-  left:0.656rem;
-  top: 4.656rem;
+  left:0.284rem;
+  top: 2.013rem;
 }
 .App-resultC-title img{
   display:block;
-  width:13.031rem;
-  height:3.813rem;
+  width:5.635rem;
+  height:1.649rem;
 }
 .App-resultC-content-borderimg{
   position: absolute;
-  left:0.813rem;
-  top:9.188rem;
-  width:18.563rem;
-  height:7.344rem;
+  left:0.352rem;
+  top:3.973rem;
+  width:8.027rem;
+  height:3.176rem;
   display:block;
 }
 .App-resultC-contentimg{
   position: absolute;
-  left:3.188rem;
-  top:11.031rem;
-  width:13.781rem;
-  height:4.125rem;
+  left:1.379rem;
+  top:4.77rem;
+  width:5.959rem;
+  height:1.784rem;
 }
 .App-resultC-circle-red {
   position: absolute;
-  left: 1.375rem;
-  bottom:6.375rem;
-  width: 5.063rem;
-  height: 5.063rem;
+  left: 0.595rem;
+  bottom:2.757rem;
+  width: 2.189rem;
+  height: 2.189rem;
   background:#eb0c16;
-  -moz-border-radius: 2.532rem;
-  -webkit-border-radius: 2.532rem;
-  border-radius: 2.532rem;
+  -moz-border-radius: 1.095rem;
+  -webkit-border-radius: 1.095rem;
+  border-radius: 1.095rem;
   z-index:2;
 }
 .App-resultC-circle-red img{
   display: block;
-  width:3.969rem;
-  height:2.969rem;
+  width:1.716rem;
+  height:1.284rem;
   position: absolute;
-  left:0.5rem;
-  top:0.844rem
+  left:0.216rem;
+  top:0.365rem
 }
 .App-resultC-p {
   position: absolute;
@@ -1077,8 +1051,8 @@ html{font-size: 16px;}
 }
 .App-resultC-p img {
   display: block;
-  width:23.125rem;
-  height:17.438rem;
+  width:10rem;
+  height:7.541rem;
 }
 
 
@@ -1091,49 +1065,49 @@ html{font-size: 16px;}
 }
 .App-resultD-title {
   position: absolute;
-  left:0.719rem;
-  top:4.625rem;
+  left:0.311rem;
+  top:2rem;
 }
 .App-resultD-title img {
   display: block;
-  width:13.031rem;
-  height:3.844rem;
+  width:5.635rem;
+  height:1.662rem;
 }
 .App-resultD-content-borderimg {
   position: absolute;
-  left:1.031rem;
-  top:9.188rem;
-  width:18.281rem;
-  height:7.344rem;
+  left:0.446rem;
+  top:3.973rem;
+  width:7.905rem;
+  height:3.181rem;
   display: block;
 }
 .App-resultD-contentimg{
   display: block;
-  width:14.156rem;
-  height:4.219rem;
+  width:6.122rem;
+  height:1.824rem;
   position: absolute;
-  left:2.875rem;
-  top:11.25rem;
+  left:1.243rem;
+  top:4.865rem;
 }
 .App-resultD-circle-red {
   position: absolute;
-  left: 0.594rem;
-  bottom:2.688rem;
-  width: 5.063rem;
-  height: 5.063rem;
+  left: 0.257rem;
+  bottom:1.154rem;
+  width: 2.189rem;
+  height: 2.189rem;
   background:#eb0c16;
-  -moz-border-radius: 2.532rem;
-  -webkit-border-radius: 2.532rem;
-  border-radius: 2.532rem;
+  -moz-border-radius: 1.095rem;
+  -webkit-border-radius: 1.095rem;
+  border-radius: 1.095rem;
   z-index:2;
 }
 .App-resultD-circle-red img {
   display: block;
-  width:3.969rem;
-  height:2.969rem;
+  width:1.716rem;
+  height:1.284rem;
   position: absolute;
-  left:0.5rem;
-  top:0.844rem
+  left:0.216rem;
+  top:0.365rem
 }
 .App-resultD-p {
   position: absolute;
@@ -1142,8 +1116,8 @@ html{font-size: 16px;}
 }
 .App-resultD-p img {
   display: block;
-  width:21.156rem;
-  height:17.438rem;
+  width:9.149rem;
+  height:7.541rem;
 }
 
 
