@@ -21,11 +21,11 @@ export default class App extends Component {
         <div>
           <Route exact path='/' component={Cover} />
           <Route exact path='/q1' component={Q1} />
-          <Route exact path='/q2' component={Q2} />
-          <Route exact path='/q3' component={Q3} />
-          <Route exact path='/q4' component={Q4} />
-          <Route exact path='/q5' component={Q5} />
-          <Route exact path='/fillname' component={FillName} />
+          <Route exact path='/q2/:score' component={Q2} />
+          <Route exact path='/q3/:score' component={Q3} />
+          <Route exact path='/q4/:score' component={Q4} />
+          <Route exact path='/q5/:score' component={Q5} />
+          <Route exact path='/fillname/:score' component={FillName} />
           <Route exact path='/booking/:result/:name' component={Booking} />
           <Route exact path='/resulta/:name' component={ResultA} />
           <Route exact path='/resultb/:name' component={ResultB} />

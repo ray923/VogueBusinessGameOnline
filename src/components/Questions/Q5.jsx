@@ -6,36 +6,27 @@ import q5qtitle from '../../asserts/pic/q5qtitle.png';
 import q5a from '../../asserts/pic/q5a.png';
 import q5b from '../../asserts/pic/q5b.png';
 import q5p from '../../asserts/pic/q5p.png';
+import q5next from '../../asserts/pic/nextq.png';
 
 export class Q5 extends Component{
     constructor(props){
         super(props);
         
-        this.onAselection = this.onAselection.bind(this);
-        this.onBselection = this.onBselection.bind(this);
+        this.onSelection = this.onSelection.bind(this);
 
         this.state = {
-            score: 0,
-            Questions: []
+            totalscore: this.props.match.params.score,
+            thisscore:0,
+            selected: ""
         }
     }
     
-    onAselection(){
-        if(this.state.Questions.indexOf('q1') === -1)
+    onSelection(score,opt,e){
+        if(this.state.selected !== opt)
         {
             this.setState ({
-                score : this.state.score + 5,
-                Questions : [...this.state.Questions,'q1']
-            })
-        }
-    }
-
-    onBselection(){
-        if(this.state.Questions.indexOf('q1') === -1)
-            {
-            this.setState ({
-                score : this.state.score + 10,
-                Questions : [...this.state.Questions,'q1']
+                thisscore : score,
+                selected : opt
             })
         }
     }
@@ -53,14 +44,16 @@ export class Q5 extends Component{
                     <div className="App-q5-q5qtitle">
                         <img src={q5qtitle} alt="q5qtitle"></img>
                     </div>
-                    <div className="App-q5-q5optioinA" onClick={this.onAselection}>
+                    <div className="App-q5-q5optioinA" onClick={(e)=>this.onSelection(5,"a",e)}>
                         <img src={q5a} alt='q5a'></img>
                     </div>
-                    <div className="App-q5-q5optioinB" onClick={this.onBselection}>
+                    <div className="App-q5-q5optioinB" onClick={(e)=>this.onSelection(10,"b",e)}>
                         <img src={q5b} alt='q5b'></img>
                     </div>
-                    <Link to={'/fillname'}>
-                        <div className="App-q5-circle-p"></div>
+                    <Link to={()=> { return '/fillname/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>
+                        <div className="App-q5-circle-p">
+                            <img src={q5next} alt='next'></img>
+                        </div>
                     </Link>
                 </div>
                 <div className="App-q5-q5p">

@@ -4,7 +4,8 @@ import fillnamelogo from '../asserts/pic/fillnamelogo.png'
 import fillnametitle from '../asserts/pic/fillnametitle.png';
 import fillnametitle2 from '../asserts/pic/fillnametitle2.png';
 import fillnamemale from '../asserts/pic/fillnamemale.png';
-import fillnamefemale from '../asserts/pic/fillnamefemale.png'
+import fillnamefemale from '../asserts/pic/fillnamefemale.png';
+import fillnamenext from '../asserts/pic/fillnamenext.png';
 
 export class FillName extends Component{
     constructor(props){
@@ -16,8 +17,8 @@ export class FillName extends Component{
         this.state = {
             name: "",
             gender: "",
-            score: 0,
-            result: "resultA"
+            score: this.props.match.params.score,
+            result: "resulta"
         }
     }
     onChangeName(e){
@@ -30,6 +31,27 @@ export class FillName extends Component{
         this.setState({
             gender: val
         })
+    }
+
+    componentDidMount(){
+        if(this.state.score === "30" || this.state.score === "35")
+        {
+            this.setState({
+                result: "resultb"
+            })
+        }
+        if (this.state.score === "40" || this.state.score === "45")
+        {
+            this.setState({
+                result: "resultc"
+            })
+        }
+        if (this.state.score === "50")
+        {
+            this.setState({
+                result: "resultd"
+            })
+        }
     }
    
     render() {
@@ -56,7 +78,9 @@ export class FillName extends Component{
                             />
                     </div>
                     <Link to={()=>{return "/booking/" + this.state.result + "/" + (this.state.name?this.state.name:"Hi!Mate!")}}>
-                        <div className="App-fillname-circle"></div>
+                        <div className="App-fillname-circle">
+                            <img src={fillnamenext} alt='getresult'></img>
+                        </div>
                     </Link>
                 </div>
             </div>
