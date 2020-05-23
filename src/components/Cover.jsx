@@ -6,13 +6,15 @@ import covertitle from '../asserts/pic/covertitle.png';
 import covercontent from '../asserts/pic/covercontent.png';
 import CoverLogo from './Motion/coverlogo';
 import CoverTitle from './Motion/covertitle';
-import {animated, config, useTrail,useTransition,useSpring } from 'react-spring';
+import {animated, useTrail,useTransition} from 'react-spring';
 import start from '../asserts/pic/start.png';
 
 const items = [covertitle,covercontent]
 const itemAs = [start]
+const config = { mass: 5, tension: 2000, friction: 200 }
 
 export default function Cover() {    
+
     const [toggle, set] = useState(true)
     const trail = useTrail(items.length, {
         config,
@@ -20,16 +22,17 @@ export default function Cover() {
         x: toggle ? 0 : 20,
         from: { opacity: 0, x: 20, height: 0 },
     })
-    const animate = useSpring({ 
-        opacity:1,
-        from:{opacity:0},
-        config:config.molasses
-    });
+
+    const transitionsP = useTransition(itemAs,null, {
+        from: { opacity: 0, transform: 'translate3d(0,100%,0)' },
+        enter: { opacity: 1, transform: 'translate3d(0,0%,0)' },
+    })
+
     const transitions = useTransition(itemAs, null, {
         from: { opacity: 0,transform: 'perspective(600px) rotateX(0deg)'},
         enter: [
           { opacity: 1},
-          { transform: 'perspective(600px) rotateX(180deg)'},
+          { transform: 'perspective(600px) rotateX(360deg)'},
           { transform: 'perspective(600px) rotateX(0deg)' },
         ],
       })
@@ -38,8 +41,7 @@ export default function Cover() {
         <div className="App">
             <CoverLogo/>
             <CoverTitle/>
-
-            <div className="trails-main App-Cover-circle-b" onClick={() => set(state => !state)}>
+            <div className="App-Cover-circle-b" onClick={() => set(state => !state)}>
                 <div>
                     {trail.map(({ x, ...rest }, index) => (
                     <animated.div
@@ -54,13 +56,15 @@ export default function Cover() {
             <Link to={'/q1'}>
                 {transitions.map(({ item,props, key }) =>
                     <animated.div key={key} className="App-Cover-circle-p" style={props}>
-                    <img src={item} alt='start'></img>
+                        <img src={item} alt='start'></img>
                     </animated.div>)
                 }
             </Link>
-            <div className="App-Cover-P">
-                <animated.img src={coverp} alt="coverps" style={animate}></animated.img>
-            </div>
+            {transitionsP.map(({ item,props, key }) =>
+                <animated.div key={key} className="App-Cover-P" style={props}>
+                    <img src={coverp} alt="coverps"></img>
+                </animated.div>)
+            }
         </div>            
     );
 }

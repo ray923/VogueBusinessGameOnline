@@ -11,6 +11,7 @@ import {ResultA} from './components/Result/ResultA'
 import {ResultB} from './components/Result/ResultB'
 import {ResultC} from './components/Result/ResultC'
 import {ResultD} from './components/Result/ResultD'
+
 import SubApp from './SubApp'
 
 export default function App() {

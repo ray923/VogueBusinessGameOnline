@@ -4,7 +4,7 @@
   position: absolute;
   height:100vh;
   width:100vw;
-  z-index: 0;
+  z-index: -1;
 }
 .wechatimg{
   position: absolute;
@@ -13,7 +13,10 @@
   opacity: 0;
   height:100vh;
   width: 100vw;
+}
+.imgNotCreated {
   pointer-events: none;
+  z-index:0;
 }
 .wechatimg img{
   max-width: 100%;
@@ -122,14 +125,12 @@
   width:5.57rem;
 }
 .App-q1-background {
-  position: relative;
+  position: absolute;
   top: 1.163rem;
   left: 0.675rem;
   right:0.675rem;
   bottom:1.137rem;
   background-color: white;
-  height: 13.055rem;
-  width:8.649rem;
 }
 .App-q1-q1title {
   position: relative;
@@ -137,6 +138,7 @@
   top: 0.298rem;
 }
 .App-q1-q1title img {
+  position: absolute;
   display: block;
   width:2.729rem;
   height:0.486rem
@@ -153,7 +155,7 @@
 }
 .App-q1-q1p{
   position: absolute;
-  top:3.961rem;
+  bottom:0;
   left:2.326rem;
   width:7.676rem;
   z-index: 2;
@@ -203,31 +205,34 @@
 }
 .App-q1-q1optionA-content {
   position: absolute;
-  left:1.271rem;
-  bottom:0.095rem;
-  width: 2.508rem;
-	height: 0.394rem;
+  display:block;
 	font-family: SourceHanSansCN-Medium;
-	font-size: 0.406rem;
+	font-size: 0.405rem;
 	font-weight: normal;
 	font-stretch: normal;
 	line-height: 0.579rem;
 	letter-spacing: 0rem;
-	color: #ffffff;
+  color: #ffffff;
+  margin:0;
+  padding:0;
+  border:0;
+  left:1.27rem;
+  bottom:0.324rem;
 }
 .App-q1-q1optionB-content {
   position: absolute;
   left:1.271rem;
-  bottom:0.095rem;
-  width: 2.94rem;
-	height: 0.394rem;
+  bottom:0.308rem;
 	font-family: SourceHanSansCN-Medium;
 	font-size: 0.394rem;
 	font-weight: normal;
 	font-stretch: normal;
 	line-height: 0.579rem;
 	letter-spacing: 0rem;
-	color: #ffffff;
+  color: #ffffff;
+  margin:0;
+  padding:0;
+  border:0;
 }
 
 

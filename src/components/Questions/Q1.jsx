@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import coverlogo from '../../asserts/pic/logo.png';
-import q1title from '../../asserts/pic/FashionM&A1.png';
+
 import q1qtitle from '../../asserts/pic/q1qtitle.png';
-import q1p from '../../asserts/pic/q1p.png';
-import q1next from '../../asserts/pic/nextq.png';
+import NextButton from '../Motion/next';
+import Q1People from '../Motion/Q1people';
+import Q1a from '../Motion/Q1a';
+import Q1b from '../Motion/Q1b';
+import Qtitleblue from '../Motion/Qtitleblue'
+
+import CoverLogo from '../Motion/coverlogo';
 
 export class Q1 extends Component{
     constructor(props){
@@ -19,7 +23,7 @@ export class Q1 extends Component{
         }
     }
     
-    onSelection(score,opt,e){
+    onSelection(score,opt){
         if(this.state.selected !== opt)
         {
             this.setState ({
@@ -32,31 +36,23 @@ export class Q1 extends Component{
     render() {
         return (
             <div className="App">
-                <div className="App-q1-logo">
-                    <img src={coverlogo} alt="altcoverlogo"></img>
-                </div>
+                <CoverLogo/>
                 <div className="App-q1-background">
-                    <div className="App-q1-q1title">
-                        <img src={q1title} alt="q1title"></img>
-                    </div>
+                <div className="App-q1-q1title">
+                    <Qtitleblue/>
+                </div>
                     <div className="App-q1-q1qtitle">
                         <img src={q1qtitle} alt="q1qtitle"></img>
                     </div>
-                    <div onClick={(e)=>this.onSelection(5,"a",e)} className="App-q1-q1optionA">
-                        <p className="App-q1-q1optionA-content">为我挣10个亿</p>    
-                    </div>
-                    <div onClick={(e)=>this.onSelection(10,"b",e)} className="App-q1-q1optionB">
-                        <p className="App-q1-q1optionB-content">做我集团的门面</p>
-                    </div>
+                    <Q1a divclass="App-q1-q1optionA" pclass="App-q1-q1optionA-content" score="5" selectedopt="a" onSelection={this.onSelection.bind(this)} optcontent="为我挣10个亿"/>
+                    
+                    <Q1b divclass="App-q1-q1optionB" pclass="App-q1-q1optionB-content" score="10" selectedopt="b" onSelection={this.onSelection.bind(this)} optcontent="做我集团的门面"/>
+
                     <Link to={()=> { return '/q2/' + (this.state.thisscore + this.state.totalscore)}}>
-                        <div className="App-q1-circle-p">
-                            <img src={q1next} alt='netxt'></img>   
-                        </div>
+                        <NextButton/>
                     </Link>
                 </div>
-                <div className="App-q1-q1p">
-                    <img src={q1p} alt="q1p"></img>
-                </div>
+                <Q1People/>
             </div>
         )
     }
