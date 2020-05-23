@@ -1,23 +1,25 @@
-import React from'react';
-import { useSpring, animated } from 'react-spring'
-import background from '../asserts/pic/cover.png';
+import React, { useState } from 'react'
+import { useTransition,useTrail, animated } from 'react-spring'
+import start from '../asserts/pic/start.png'
 
-function FisrtEffect() {
+const itemAs = [start]
 
- const props1 = useSpring({ 
-     opacity:1,
-     from:{opacity:0}
-  });
-  //const props2 = useSpring({ number: 1, from: { number: 0 } })
-  //const props3= useSpring({ vh: 100, from: { vh: 0 } })
-  return (
-    <>
-      <animated.span style={props1}>abc</animated.span>
-      
-      <animated.img src={background} style={props1} alt="background" />
-    </>
-  )
+function Test() {
+ 
+  const transitions = useTransition(itemAs, null, {
+    from: { opacity: 0,transform: 'perspective(600px) rotateX(0deg)'},
+    enter: [
+      { opacity: 1},
+      { transform: 'perspective(600px) rotateX(180deg)'},
+      { transform: 'perspective(600px) rotateX(0deg)' },
+    ],
+  })
+    
+    return transitions.map(({ item,props, key }) =>
+    <animated.div key={key} className="App-Cover-circle-p" style={props}>
+      <img src={item} alt='start'></img>
+    </animated.div>
+    )
 }
 
-
-export default FisrtEffect;
+export default Test

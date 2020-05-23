@@ -7,8 +7,13 @@
   z-index: 0;
 }
 .wechatimg{
+  position: absolute;
+  left: 0;
+  top:0;
+  opacity: 0;
   height:100vh;
   width: 100vw;
+  pointer-events: none;
 }
 .wechatimg img{
   max-width: 100%;
@@ -58,7 +63,7 @@
   border-radius: 3.669rem;
   z-index: 2;
 }
-.App-Cover-circle-b-title {
+.App-Cover-circle-b-0 {
   display: block;
   width:4.014rem;
   height:2.135rem;
@@ -76,7 +81,7 @@
   background-color: #fdaaa9;
   opacity: 1;
 }
-.App-Cover-circle-b-content {
+.App-Cover-circle-b-1 {
   display: block;
   width:6.649rem;
   height:1.324rem;
