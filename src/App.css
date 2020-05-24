@@ -426,6 +426,7 @@
   position: absolute;
   top:3.676rem;
   right:0.757rem;
+  transform-origin: left bottom;
 }
 .App-q3-apattern img{
   display:block;
@@ -436,6 +437,7 @@
   position: absolute;
   top:5.108rem;
   left:1.297rem;
+  transform-origin: right center;
 }
 .App-q3-bpattern img{
   display:block;

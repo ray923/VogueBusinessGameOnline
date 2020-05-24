@@ -29,11 +29,11 @@ export default function Cover() {
     })
 
     const transitions = useTransition(itemAs, null, {
-        from: { opacity: 0,transform: 'perspective(600px) rotateX(0deg)'},
+        from: { opacity: 0,transform: 'rotateX(0deg)'},
         enter: [
           { opacity: 1},
-          { transform: 'perspective(600px) rotateX(360deg)'},
-          { transform: 'perspective(600px) rotateX(0deg)' },
+          { transform: 'rotateX(360deg)'},
+          { transform: 'rotateX(0deg)' },
         ],
       })
     
