@@ -1,25 +1,17 @@
-import React, { useState } from 'react'
-import { useTransition,useTrail, animated } from 'react-spring'
-import start from '../asserts/pic/start.png'
+import React from 'react';
+import { useSpring, animated } from 'react-spring'
 
-const itemAs = [start]
+export default function Test() {
 
-function Test() {
- 
-  const transitions = useTransition(itemAs, null, {
-    from: { opacity: 0,transform: 'perspective(600px) rotateX(0deg)'},
-    enter: [
-      { opacity: 1},
-      { transform: 'perspective(600px) rotateX(180deg)'},
-      { transform: 'perspective(600px) rotateX(0deg)' },
-    ],
-  })
     
-    return transitions.map(({ item,props, key }) =>
-    <animated.div key={key} className="App-Cover-circle-p" style={props}>
-      <img src={item} alt='start'></img>
-    </animated.div>
+    const styles = useSpring({ form: {width:'0%'}, to: {width:'100%'}})
+
+    return (
+        <animated.div style={styles} className="Test" ></animated.div>
     )
 }
 
-export default Test
+
+
+
+

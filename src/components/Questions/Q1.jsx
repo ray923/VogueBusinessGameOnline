@@ -49,7 +49,7 @@ export class Q1 extends Component{
                     <Q1b divclass="App-q1-q1optionB" pclass="App-q1-q1optionB-content" score="10" selectedopt="b" onSelection={this.onSelection.bind(this)} optcontent="做我集团的门面"/>
 
                     <Link to={()=> { return '/q2/' + (this.state.thisscore + this.state.totalscore)}}>
-                        <NextButton/>
+                        <NextButton divclass="App-q1-circle-p"/>
                     </Link>
                 </div>
                 <Q1People/>

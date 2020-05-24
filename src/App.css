@@ -23,10 +23,19 @@
   max-height: 100;
 }
 
+.Test{
+  background: red;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
 .App-cover-logo {
   position: absolute;
-  top: 0.466rem;
-  left: 0.176rem;
+  top: 0.338rem;
+  left: 0.649rem;
 }
 .App-cover-logo img {
   display: block;
@@ -133,12 +142,15 @@
   background-color: white;
 }
 .App-q1-q1title {
-  position: relative;
+  position: absolute;
+  left:0;
+  top:0;
   left: 0.566rem;
   top: 0.298rem;
 }
 .App-q1-q1title img {
   position: absolute;
+
   display: block;
   width:2.729rem;
   height:0.486rem
@@ -146,7 +158,7 @@
 .App-q1-q1qtitle {
   position: relative;
   left:0.471rem;
-  top:0.796rem;
+  top:1.095rem
 }
 .App-q1-q1qtitle img {
   display: block;
@@ -270,6 +282,8 @@
   position: absolute;
   left:0.311rem;
   top:4.406rem;
+  width:0.689rem;
+  height:2.77rem;
 }
 .App-q2-optionA-title{
   display: block;
@@ -287,52 +301,64 @@
   height:2.77rem;
 }
 .App-q2-optionA-content1 {
-  display: block;
-  width:7.23rem;
-  height:0.784rem;
   position: absolute;
   left: 0.811rem;
   top:0;
+  width:7.23rem;
+}
+.App-q2-optionA-content1 img{
+  display: block;
+  height:0.784rem;
 }
 .App-q2-optionA-content2 {
-  display: block;
   width:6.77rem;
-  height:0.797rem;
   position: absolute;
   left: 0.811rem;
   top:0.986rem;
 }
-.App-q2-optionA-content3 {
+.App-q2-optionA-content2 img{
   display: block;
+  height:0.797rem;
+}
+.App-q2-optionA-content3 {
   width:6.554rem;
-  height:0.784rem;
   position: absolute;
   left: 0.811rem;
   top:1.987rem;
 }
-.App-q2-optionB-content1 {
+.App-q2-optionA-content3 img{
   display: block;
-  width:5.608rem;
   height:0.784rem;
+}
+.App-q2-optionB-content1 {
+  width:5.608rem;
   position: absolute;
   left: 0.811rem;
   top:0;
 }
-.App-q2-optionB-content2 {
+.App-q2-optionB-content1 img{
   display: block;
+  height:0.784rem;
+}
+.App-q2-optionB-content2 {
   width:5.459rem;
-  height:0.797rem;
   position: absolute;
   left: 0.811rem;
   top:0.986rem;
 }
-.App-q2-optionB-content3 {
+.App-q2-optionB-content2 img{
   display: block;
+  height:0.797rem;
+}
+.App-q2-optionB-content3 {
   width:5.189rem;
-  height:0.784rem;
   position: absolute;
   left: 0.811rem;
   top:1.987rem;
+}
+.App-q2-optionB-content3 img{
+  display: block;
+  height:0.784rem;
 }
 
 
