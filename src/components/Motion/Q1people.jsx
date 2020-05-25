@@ -13,7 +13,7 @@ export default function Q1People() {
     return (
         transitions.map(({props, key }) => 
             <animated.div className="App-q1-q1p" key={key} style={props}>
-                <img src={q1p} alt="q1p" ></img>
+                <img rel="preload" src={q1p} alt="q1p" ></img>
             </animated.div>
         )        
     )

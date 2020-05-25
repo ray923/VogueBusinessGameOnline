@@ -47,7 +47,7 @@ export default function Cover() {
                     <animated.div
                         key={index} 
                         style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
-                        <animated.img src={items[index]} className={"trails-text App-Cover-circle-b-" + index}></animated.img>
+                        <animated.img rel="preload" src={items[index]} className={"trails-text App-Cover-circle-b-" + index}></animated.img>
                     </animated.div>
                     ))}
                 </div>
@@ -56,13 +56,13 @@ export default function Cover() {
             <Link to={'/q1'}>
                 {transitions.map(({ item,props, key }) =>
                     <animated.div key={key} className="App-Cover-circle-p" style={props}>
-                        <img src={item} alt='start'></img>
+                        <img rel="preload" src={item} alt='start'></img>
                     </animated.div>)
                 }
             </Link>
             {transitionsP.map(({ item,props, key }) =>
                 <animated.div key={key} className="App-Cover-P" style={props}>
-                    <img src={coverp} alt="coverps"></img>
+                    <img rel="preload" src={coverp} alt="coverps"></img>
                 </animated.div>)
             }
         </div>            

@@ -13,7 +13,7 @@ function CoverLogo() {
     
     return (
         <animated.div style={animate} className="App-cover-logo">
-            <img src={coverlogo} alt="altcoverlogo"></img>
+            <img rel="preload" src={coverlogo} alt="altcoverlogo"></img>
         </animated.div>
      )
    }

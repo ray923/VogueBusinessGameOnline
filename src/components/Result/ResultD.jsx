@@ -18,6 +18,10 @@ export class ResultD extends Component{
         }
     }
 
+    componentDidMount(){
+        window.createHTMLImage();
+    }
+
     render() {
         return (
             <div className="App-resultD">
@@ -42,6 +46,7 @@ export class ResultD extends Component{
                 <div className="App-resultD-p">
                     <img src={resultDp} alt='backgroundpattern'></img>
                 </div>
+                <div id="wechatimg" className="wechatimg imgNotCreated"></div>
             </div>
         )
     }

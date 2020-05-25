@@ -13,7 +13,7 @@ function CoverTitle() {
     
     return (
         <animated.div style={animate} className="App-cover-logo-f">
-            <img src={coverf} alt="altcoverlogo"></img>
+            <img rel="preload" src={coverf} alt="altcoverlogo"></img>
         </animated.div>
      )
    }

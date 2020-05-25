@@ -5,19 +5,13 @@ import q1qtitle from '../../asserts/pic/q2qtitle.png';
 import CoverLogo from '../Motion/coverlogo';
 import NextButton from '../Motion/next';
 import q2a from '../../asserts/pic/q2a.png';
-import acontent1 from '../../asserts/pic/optacontent1.png';
-import acontent2 from '../../asserts/pic/optacontent2.png';
-import acontent3 from '../../asserts/pic/optacontent3.png';
 import q2b from '../../asserts/pic/q2b.png';
-import bcontent1 from '../../asserts/pic/optbcontent1.png';
-import bcontent2 from '../../asserts/pic/optbcontent2.png';
-import bcontent3 from '../../asserts/pic/optbcontent3.png';
 import Q2selectionA from '../Motion/Q2selectionA';
-
+import Q2selectionB from '../Motion/Q2selectionB';
 
 
 export class Q2 extends Component{
-    _isMounted = false;
+
     constructor(props){
         super(props);
         
@@ -40,10 +34,6 @@ export class Q2 extends Component{
         }
     }
 
-    componentWillUnmount(){
-        this._isMounted = false;
-    }
-
     render() {
         return (
             <div className="App">
@@ -58,17 +48,13 @@ export class Q2 extends Component{
                     <div onClick={(e)=>this.onSelection(5,"a",e)} className="App-q2-optionA">
                         <img src={q2a} alt='optionB' className="App-q2-optionB-title"></img>
 
-                        <Q2selectionA divclass='App-q2-optionA-content1' acontent={acontent1}/>
-                        <Q2selectionA divclass='App-q2-optionA-content2' acontent={acontent2}/>
-                        <Q2selectionA divclass='App-q2-optionA-content3' acontent={acontent3}/>
+                        <Q2selectionA/>
 
                     </div>
                     <div onClick={(e)=>this.onSelection(10,"b",e)} className="App-q2-optionB">
                         <img src={q2b} alt='optionB' className="App-q2-optionB-title"></img>
                         
-                        <Q2selectionA divclass='App-q2-optionB-content1' acontent={bcontent1}/>
-                        <Q2selectionA divclass='App-q2-optionB-content2' acontent={bcontent2}/>
-                        <Q2selectionA divclass='App-q2-optionB-content3' acontent={bcontent3}/>
+                        <Q2selectionB/>
 
                     </div>
                     <Link to={()=> { return '/q3/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>

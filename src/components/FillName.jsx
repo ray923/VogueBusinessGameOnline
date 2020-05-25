@@ -77,7 +77,7 @@ export class FillName extends Component{
                             onChange={this.onChangeName}
                             />
                     </div>
-                    <Link to={()=>{return "/booking/" + this.state.result + "/" + (this.state.name?this.state.name:"Hi!Mate!")}}>
+                    <Link to={()=>{return "/" + this.state.result + "/" + (this.state.name?this.state.name:"Hi!Mate!")}}>
                         <div className="App-fillname-circle">
                             <img src={fillnamenext} alt='getresult'></img>
                         </div>

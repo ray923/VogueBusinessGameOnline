@@ -20,7 +20,7 @@ export default function NextButton(props) {
     return (
         transitions.map(({props, key }) =>
             <animated.div key={key} className={divclass} style={props}>
-                <img src={next} alt='netxt'></img>   
+                <img rel="preload" src={next} alt='netxt'></img>   
             </animated.div>
         )
     )

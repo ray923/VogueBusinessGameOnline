@@ -375,7 +375,7 @@
 .App-q3-q3qtitle {
   position: relative;
   left:0.471rem;
-  top:0.826rem;
+  top:1.095rem;
 }
 .App-q3-q3qtitle img {
   display: block;
@@ -460,23 +460,32 @@
   position: absolute;
   top:3.892rem;
   left:0.784rem;
+  height:5.878rem;
   z-index: 1;
 }
 .App-q4-q4acontent img{
+  position: absolute;
   display:block;
-  height:5.878rem;
   width:1.554rem;
 }
 .App-q4-q4apattern {
   position: absolute;
   top:4.527rem;
   left:2.5rem;
+  height:5.243rem;
   z-index: 1;
 }
 .App-q4-q4apattern img{
+  position: absolute;
   display:block;
-  height:5.243rem;
   width:1.797rem;
+}
+.App-q4-q4apattern-mask{
+  position: absolute;
+  display:block;
+  width:1.797rem;
+  background-color: white;
+  z-index: 3;
 }
 .App-q4-q4aoption {
   position: absolute;
@@ -507,6 +516,14 @@
   display:block;
   height:3.946rem;
   width:1.73rem;
+}
+.App-q4-q4bpattern-mask{
+  position: absolute;
+  display:block;
+  height:3.946rem;
+  width:1.73rem;
+  background-color: white;
+  z-index: 3;
 }
 .App-q4-q4boption {
   position: absolute;
@@ -568,16 +585,18 @@
   position: absolute;
   left:0.946rem;
   top:0.081rem;
-  width:1.757rem;
   height:0.013rem;
+  width:1.757rem
 }
 .App-q4-70per-s {
   position: absolute;
   left:0.946rem;
   top:1.635rem;
-  width:4.432rem;
   height:0.014rem;
+  width:4.432rem;
 }
+
+
 
 
 .App-q5-q5qtitle {
@@ -633,7 +652,8 @@
 .App-q5-q5p {
   position: absolute;
   left:0;
-  top: 7.878rem;
+  bottom:0;
+  transform-origin: right center;
 }
 .App-q5-q5p img{
   display: block;

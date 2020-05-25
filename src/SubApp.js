@@ -21,7 +21,7 @@ export default function SubApp() {
         <animated.div key={key} style={props}>
           <Switch location={location}>  
             <Route exact path='/fillname/:score' component={FillName} />
-            <Route exact path='/booking/:result/:name' component={Booking} />
+            <Route exact path='/booking' component={Booking} />
           </Switch>
         </animated.div>
       ))

@@ -20,7 +20,7 @@ export default function Q3pattern(props) {
     return (
         transitions.map(({props, key }) =>
             <animated.div key={key} className={divclass} style={props}>
-                <img src={imgsrc} alt='pattern'></img>   
+                <img rel="preload" src={imgsrc} alt='pattern'></img>   
             </animated.div>
         )
     )

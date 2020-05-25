@@ -24,6 +24,7 @@ export class ResultA extends Component{
 
     render() {
         return (
+            <>
             <div className="App-resultA">
                 <div className="App-resultA-logo">
                     <img src={logo} alt='logo'></img>
@@ -46,7 +47,10 @@ export class ResultA extends Component{
                 <div className="App-resultA-p">
                     <img src={resultAp} alt='backgroundpattern'></img>
                 </div>
+                <div id="wechatimg" className="wechatimg imgNotCreated"></div>
             </div>
+
+            </>
         )
     }
 }
