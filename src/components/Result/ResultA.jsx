@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../asserts/pic/typeAlogo.png';
 import typeA from '../../asserts/pic/typeA.png';
 import ResultQR from './ResultQR';
@@ -47,7 +48,9 @@ export class ResultA extends Component{
                 <div className="App-resultA-p">
                     <img src={resultAp} alt='backgroundpattern'></img>
                 </div>
-                <div id="wechatimg" className="wechatimg imgNotCreated"></div>
+                <Link to='/booking'>
+                    <div id="wechatimg" className="wechatimg imgNotCreated"></div>
+                </Link>
             </div>
 
             </>
