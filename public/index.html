@@ -10,6 +10,7 @@
     <script type="text/javascript" src="./jslib/jquery-3.5.1.slim.min.js"></script>
     <script type="text/javascript" src="./jslib/html2canvas.min.js"></script>
     <script type="text/javascript" src="./jslib/canvas2image.js"></script>
+    <script src="https://js.selfimg.com.cn/??lib/jweixin-1.0.0.js,brickjs/mshare/0.1.1/mshare.min.js"></script>
     <script type="text/javascript">
       var createHTMLImage = function a() 
       {
@@ -20,6 +21,28 @@
             $("#wechatimg").removeClass("imgNotCreated");
           });
       };
+      new brickjs.MShare({
+          site: "1",
+          catalog: "",
+          sUrl: '分享url', //分享url
+          titleAppMessage: '分享标题',//分享标题
+          titleTimeline: '分享朋友圈标题',//分享朋友圈标题
+          imgUrl: '分享图url',//分享图url
+          desc: '分享导语',//分享导语
+          appKey: {
+              tsina: "2800445271"
+          },
+          ralateUid: '1508453695',
+          wxGuide: {
+              imgUrl: 'https://css.selfimg.com.cn/vogue/mdiscovery/images/weixin-guide.png',
+              width: 295, //微信提示图片宽高
+              height: 87,
+              style: {
+                  right: 0,
+                  top: 0
+              }
+          }
+      });
     </script>
     <title>VogueBusiness In China</title>
   </head>
