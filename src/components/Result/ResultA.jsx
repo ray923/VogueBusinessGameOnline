@@ -9,6 +9,8 @@ import contentborder from '../../asserts/pic/resultAcontentborder.png';
 import content from '../../asserts/pic/resultAcontent.png';
 import share from '../../asserts/pic/resultAshare.png';
 import resultAp from '../../asserts/pic/resultAp.png';
+import CoverlogoforQ from '../Motion/coverlogoforQ';
+import resultbackground from '../../asserts/pic/resultAbackground.png'
 
 export class ResultA extends Component{
     constructor(props){
@@ -27,9 +29,8 @@ export class ResultA extends Component{
         return (
             <>
             <div className="App-resultA">
-                <div className="App-resultA-logo">
-                    <img src={logo} alt='logo'></img>
-                </div>
+                <img className="App-resultA-backimg" alt='background' src={resultbackground}></img>
+                <CoverlogoforQ/>
                 <div className="App-resultA-background">
                     <div className='App-result-typeA'>
                         <img src={typeA} alt='typea'></img>
@@ -49,7 +50,7 @@ export class ResultA extends Component{
                     <img src={resultAp} alt='backgroundpattern'></img>
                 </div>
                 <Link to='/booking'>
-                    <div id="wechatimg" className="wechatimg imgNotCreated"></div>
+                    <div id="wechatimg" className="wechatimg"></div>
                 </Link>
             </div>
 

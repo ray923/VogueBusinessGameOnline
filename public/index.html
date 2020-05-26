@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var createHTMLImage = function a() 
       {
-          html2canvas(document.body).then(function(canvas) 
+          html2canvas(document.getElementById("root")).then(function(canvas) 
           {
             var img = Canvas2Image.convertToJPEG(canvas, canvas.width, canvas.height);
             document.getElementById("wechatimg").appendChild(img);

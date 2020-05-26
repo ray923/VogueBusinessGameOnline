@@ -8,7 +8,7 @@ import Q1a from '../Motion/Q1a';
 import Q1b from '../Motion/Q1b';
 import Qtitleblue from '../Motion/Qtitleblue'
 
-import CoverLogo from '../Motion/coverlogo';
+import CoverlogoforQ from '../Motion/coverlogoforQ';
 
 export class Q1 extends Component{
     constructor(props){
@@ -36,9 +36,9 @@ export class Q1 extends Component{
     render() {
         return (
             <div className="App">
-                <CoverLogo/>
+                <CoverlogoforQ/>
                 <div className="App-q1-background">
-                <div className="App-q1-q1title">
+                <div className="App-q1-q1titleNew">
                     <Qtitleblue/>
                 </div>
                     <div className="App-q1-q1qtitle">

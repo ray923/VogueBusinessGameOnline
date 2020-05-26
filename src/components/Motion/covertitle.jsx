@@ -6,9 +6,9 @@ import { useSpring, animated, config } from 'react-spring';
 function CoverTitle() {
 
     const animate = useSpring({ 
-        opacity:1,
-        from:{opacity:0},
-        config:config.molasses
+        to: { opacity: 1, transform: 'translate3d(0,0,0)' },
+        from: { opacity: 0, transform: 'translate3d(0,0,0)' },
+        config:config.slow
     });
     
     return (

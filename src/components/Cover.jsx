@@ -6,65 +6,64 @@ import covertitle from '../asserts/pic/covertitle.png';
 import covercontent from '../asserts/pic/covercontent.png';
 import CoverLogo from './Motion/coverlogo';
 import CoverTitle from './Motion/covertitle';
-import {animated, useTrail,useTransition} from 'react-spring';
+import {animated, useTrail,useTransition,useSpring,config} from 'react-spring';
 import start from '../asserts/pic/start.png';
 
-const items = [covertitle,covercontent]
 const itemAs = [start]
-const config = { mass: 5, tension: 2000, friction: 200 }
 
 export default function Cover() {    
 
-    const [toggle, set] = useState(true)
-    const trail = useTrail(items.length, {
-        config,
-        opacity: toggle ? 1 : 0,
-        x: toggle ? 0 : 20,
-        from: { opacity: 0, x: 20, height: 0 },
+    const people = useSpring({
+        from: { opacity: 0, transform: 'scale(0)' },
+        to: { opacity: 1, transform: 'scale(1)' },
+        delay: 1700,
+        config: { mass: 5, tension: 2000, friction: 1000 }
     })
 
-    const transitionsP = useTransition(itemAs,null, {
-        from: { opacity: 0, transform: 'translate3d(0,100%,0)' },
-        enter: { opacity: 1, transform: 'translate3d(0,0%,0)' },
+    const startstyle = useSpring({
+        from: { opacity: 1, transform: 'scale(0)' },
+        to: { opacity: 1, transform: 'scale(1)' },
+        delay: 1400,
+        config: config.slow
+    })
+    const circleblue = useSpring({
+        from: { transform: 'scale(0)'},
+        to: { transform: 'scale(1)'},
+        delay: 1000,
+        config: { mass: 1, tension: 100, friction: 30 }
     })
 
-    const transitions = useTransition(itemAs, null, {
-        from: { opacity: 0,transform: 'rotateX(0deg)'},
-        enter: [
-          { opacity: 1},
-          { transform: 'rotateX(360deg)'},
-          { transform: 'rotateX(0deg)' },
-        ],
-      })
+    const wordstyle = useSpring({
+        from: { height:'0rem', opacity:0},
+        to: { height:'1.324rem',opacity:1},
+        delay: 1700,
+        config: { mass: 1, tension: 100, friction: 30 }
+    })
     
     return (
+        <>
+        
         <div className="App">
             <CoverLogo/>
             <CoverTitle/>
-            <div className="App-Cover-circle-b" onClick={() => set(state => !state)}>
-                <div>
-                    {trail.map(({ x, ...rest }, index) => (
-                    <animated.div
-                        key={index} 
-                        style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
-                        <animated.img rel="preload" src={items[index]} className={"trails-text App-Cover-circle-b-" + index}></animated.img>
-                    </animated.div>
-                    ))}
-                </div>
-                <div className="cover-slash"></div>
-                </div>
+            <animated.div className="App-Cover-circle-b" style={circleblue}>
+            <div className="App-Cover-circle-bopacity"></div>
+            <div>
+                <img alt="content" rel="preload" src={covertitle} className="App-Cover-circle-b-0"></img>
+                <animated.img style={wordstyle} alt="content" rel="preload" src={covercontent} className="App-Cover-circle-b-1"></animated.img>
+            </div>
+            <div className="cover-slash"></div>
             <Link to={'/q1'}>
-                {transitions.map(({ item,props, key }) =>
-                    <animated.div key={key} className="App-Cover-circle-p" style={props}>
-                        <img rel="preload" src={item} alt='start'></img>
-                    </animated.div>)
-                }
+                    <animated.div className="App-Cover-circle-p" style={startstyle}>
+                        <img rel="preload" src={start} alt='start'></img>
+                    </animated.div>
+                
             </Link>
-            {transitionsP.map(({ item,props, key }) =>
-                <animated.div key={key} className="App-Cover-P" style={props}>
-                    <img rel="preload" src={coverp} alt="coverps"></img>
-                </animated.div>)
-            }
-        </div>            
+            </animated.div>
+            <animated.div className="App-Cover-P" style={people}>
+                <img rel="preload" src={coverp} alt="coverps"></img>
+            </animated.div> 
+        </div>
+        </>          
     );
 }
