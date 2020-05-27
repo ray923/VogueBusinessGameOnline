@@ -6,6 +6,7 @@ import fillnametitle2 from '../asserts/pic/fillnametitle2.png';
 import fillnamemale from '../asserts/pic/fillnamemale.png';
 import fillnamefemale from '../asserts/pic/fillnamefemale.png';
 import fillnamenext from '../asserts/pic/fillnamenext.png';
+import backgroundImg from '../asserts/pic/fillnamebackground.png'
 
 export class FillName extends Component{
     constructor(props){
@@ -58,13 +59,14 @@ export class FillName extends Component{
         
         return (
             <div className="App-fillname-background">
+                <img className="App-fillname-background-img" src={backgroundImg} alt="pic"></img>
                 <div className='App-fillname-logo'>
                     <img src={fillnamelogo} alt='fillnamelogo'></img>
                 </div>
                 <div className="App-fillname-border">
                     <div className="App-fillname-title">
                         <img src={fillnametitle} alt='selectGender'></img>
-                       </div>
+                    </div>
                     <SelectGender gender="MAN" setGender = {this.setGender.bind(this)} imggender={fillnamemale} genderclass="App-fillname-man"/>
                     <SelectGender gender="WOMEN" setGender = {this.setGender.bind(this)} imggender={fillnamefemale} genderclass="App-fillname-women"/>
                     <div className="App-fillname-nametitle">

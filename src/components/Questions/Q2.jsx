@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import q1title from '../../asserts/pic/FashionM&A2.png';
-import q1qtitle from '../../asserts/pic/q2qtitle.png';
-import CoverLogo from '../Motion/coverlogo';
+import qtitle from '../../asserts/pic/FashionM&A2.png';
+import q2qtitle from '../../asserts/pic/q2qtitle.png';
+import CoverlogoforQ from '../Motion/coverlogoforQ';
 import NextButton from '../Motion/next';
 import q2a from '../../asserts/pic/q2a.png';
 import q2b from '../../asserts/pic/q2b.png';
@@ -37,16 +37,16 @@ export class Q2 extends Component{
     render() {
         return (
             <div className="App">
-                <CoverLogo/>
+                <CoverlogoforQ/>
                 <div className="App-q1-background">
-                    <div className="App-q1-q1title">
-                        <img src={q1title} alt="q1title"></img>
+                    <div className="App-q1-q1titleNew">
+                        <img src={qtitle} alt="qtitle"></img>
                     </div>
                     <div className="App-q2-q2qtitle">
-                        <img src={q1qtitle} alt="q2qtitle"></img>
+                        <img src={q2qtitle} alt="q2qtitle"></img>
                     </div>
                     <div onClick={(e)=>this.onSelection(5,"a",e)} className="App-q2-optionA">
-                        <img src={q2a} alt='optionB' className="App-q2-optionB-title"></img>
+                        <img src={q2a} alt='optionB' className="App-q2-optionA-title"></img>
 
                         <Q2selectionA/>
 

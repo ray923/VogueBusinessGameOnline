@@ -8,6 +8,7 @@ import contentborder from '../../asserts/pic/resultDcontentborder.png';
 import content from '../../asserts/pic/resultDcontent.png';
 import share from '../../asserts/pic/resultAshare.png';
 import resultDp from '../../asserts/pic/resultDp.png';
+import { Link } from 'react-router-dom';
 
 export class ResultD extends Component{
     constructor(props){
@@ -25,7 +26,7 @@ export class ResultD extends Component{
     render() {
         return (
             <div className="App-resultD">
-                <div className="App-resultA-logo">
+                <div className="App-resultD-logo">
                     <img src={logo} alt='logo'></img>
                 </div>
                 <div className="App-resultA-background">
@@ -46,7 +47,9 @@ export class ResultD extends Component{
                 <div className="App-resultD-p">
                     <img src={resultDp} alt='backgroundpattern'></img>
                 </div>
-                <div id="wechatimg" className="wechatimg imgNotCreated"></div>
+                <Link to='/booking'>
+                    <div id="wechatimg" className="wechatimg"></div>
+                </Link>
             </div>
         )
     }

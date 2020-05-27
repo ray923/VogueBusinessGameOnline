@@ -9,7 +9,7 @@ export default function Q3pattern(props) {
     from: { opacity: 0,transform: 'translate3d(0%,0%,0) rotate(0deg)'},
         enter: [
             { opacity: 1},
-            { transform: 'translate3d(15%,25%,0) rotate(45deg)'},
+            { transform: 'translate3d(15%,25%,0) rotate(25deg)'},
             { transform: 'translate3d(0%,0%,0) rotate(0deg)' },
         ],
     })

@@ -6,7 +6,7 @@ import q3a from '../../asserts/pic/q3a.png';
 import q3b from '../../asserts/pic/q3b.png';
 import q3ap from '../../asserts/pic/q3apattern.png';
 import q3bp from '../../asserts/pic/q3bpattern.png';
-import CoverLogo from '../Motion/coverlogo';
+import CoverlogoforQ from '../Motion/coverlogoforQ';
 import NextButton from '../Motion/next';
 import Q3pattern from '../Motion/Q3pattern';
 import Q3patternanti from '../Motion/Q3patternanti'
@@ -37,9 +37,9 @@ export class Q3 extends Component{
     render() {
         return (
             <div className="App">
-                <CoverLogo/>
+                <CoverlogoforQ/>
                 <div className="App-q3-background">
-                    <div className="App-q1-q1title">
+                    <div className="App-q1-q1titleNew">
                         <img src={q1title} alt="q1title"></img>
                     </div>
                     <div className="App-q3-q3qtitle">
@@ -58,6 +58,7 @@ export class Q3 extends Component{
                         <NextButton divclass="App-q3-circle-p"/>
                     </Link>
                 </div>
+                <div className="App-q3-mask"></div>
             </div>
         )
     }

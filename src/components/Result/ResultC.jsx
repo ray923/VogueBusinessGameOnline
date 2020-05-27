@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../../asserts/pic/typeAlogo.png';
+import { Link } from 'react-router-dom';
 import typeC from '../../asserts/pic/typeC.png';
 import ResultQR from './ResultQR';
 import ResultName from './ResultName';
@@ -8,6 +8,7 @@ import contentborder from '../../asserts/pic/resultCcontentborder.png';
 import content from '../../asserts/pic/resultCcontent.png';
 import share from '../../asserts/pic/resultAshare.png';
 import resultCp from '../../asserts/pic/resultCp.png';
+import CoverlogoforQ from '../Motion/coverlogoforQ';
 
 export class ResultC extends Component{
     constructor(props){
@@ -25,9 +26,7 @@ export class ResultC extends Component{
     render() {
         return (
             <div className="App-resultC">
-                <div className="App-resultA-logo">
-                    <img src={logo} alt='logo'></img>
-                </div>
+                <CoverlogoforQ/>
                 <div className="App-resultA-background">
                     <div className='App-result-typeA'>
                         <img src={typeC} alt='typea'></img>
@@ -46,7 +45,9 @@ export class ResultC extends Component{
                 <div className="App-resultC-p">
                     <img src={resultCp} alt='backgroundpattern'></img>
                 </div>
-                <div id="wechatimg" className="wechatimg imgNotCreated"></div>
+                <Link to='/booking'>
+                    <div id="wechatimg" className="wechatimg"></div>
+                </Link>
             </div>
         )
     }

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../asserts/pic/typeAlogo.png';
 import typeA from '../../asserts/pic/typeA.png';
 import ResultQR from './ResultQR';
 import ResultName from './ResultName';

@@ -7,7 +7,7 @@ import q4b from '../../asserts/pic/q4b.png';
 
 
 
-import CoverLogo from '../Motion/coverlogo';
+import CoverlogoforQ from '../Motion/coverlogoforQ';
 import NextButton from '../Motion/next';
 import Q4selection from '../Motion/Q4selection'
 import Q4Apattern from '../Motion/Q4Apattern'
@@ -40,9 +40,9 @@ export class Q4 extends Component{
     render() {
         return (
             <div className="App">
-                <CoverLogo/>
+                <CoverlogoforQ/>
                 <div className="App-q1-background">
-                    <div className="App-q1-q1title">
+                    <div className="App-q1-q1titleNew">
                         <img src={q1title} alt="q1title"></img>
                     </div>
                     <div className="App-q4-q4qtitle">

@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, HashRouter} from 'react-router-dom';
 
 import Cover from './components/Cover'
+import PreCover from './components/preCover'
 import {Q1} from './components/Questions/Q1'
 import {ResultA} from './components/Result/ResultA'
 import {ResultB} from './components/Result/ResultB'
@@ -15,7 +16,7 @@ export default function App() {
     return (
       <HashRouter>
         <Route exact path='/' component={Cover} />
-        
+        <Route exact path='/precover' component={PreCover} />
         <SubApp/>
         <Route exact path='/resulta/:name' component={ResultA} />
         <Route exact path='/resultb/:name' component={ResultB} />

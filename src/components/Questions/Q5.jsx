@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import q1title from '../../asserts/pic/FashionM&A5.png';
 import q5qtitle from '../../asserts/pic/q5qtitle.png';
 
-import CoverLogo from '../Motion/coverlogo';
+import CoverlogoforQ from '../Motion/coverlogoforQ';
 import NextButton from '../Motion/next';
 import Q5selection from '../Motion/Q5selection'
 import Q5p from '../Motion/Q5p'
@@ -34,9 +34,9 @@ export class Q5 extends Component{
     render() {
         return (
             <div className="App">
-                <CoverLogo/>
+                <CoverlogoforQ/>
                 <div className="App-q1-background">
-                    <div className="App-q1-q1title">
+                    <div className="App-q1-q1titleNew">
                         <img src={q1title} alt="q1title"></img>
                     </div>
                     <div className="App-q5-q5qtitle">

@@ -15,7 +15,7 @@ import {Booking} from './components/Result/Booking'
 export default function SubApp() {
 
     const location = useLocation()
-    const config = { mass: 5, tension: 2000, friction: 700 }
+    const config = { mass: 5, tension: 200, friction: 30 }
     const transitions = useTransition(location, location => location.pathname, {
       config,
       from: { opacity: 0, transform: 'translate3d(0,0,0)' },
