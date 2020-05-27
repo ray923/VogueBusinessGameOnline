@@ -9,6 +9,12 @@ import q2b from '../../asserts/pic/q2b.png';
 import Q2selectionA from '../Motion/Q2selectionA';
 import Q2selectionB from '../Motion/Q2selectionB';
 
+import backgroundImg from '../../asserts/pic/fillnamebackground.png'
+import resultAp from '../../asserts/pic/resultAp.png';
+import resultBp from '../../asserts/pic/resultBp.png';
+import resultCp from '../../asserts/pic/resultCp.png';
+import resultDp from '../../asserts/pic/resultDp.png';
+
 
 export class Q2 extends Component{
 
@@ -37,6 +43,7 @@ export class Q2 extends Component{
 
     render() {
         return (
+            <>
             <div className="App">
                 <CoverlogoforQ/>
                 <div className="App-q1-background">
@@ -63,6 +70,14 @@ export class Q2 extends Component{
                     </Link>
                 </div>
             </div>
+            <div className="noshow">
+                <img src={backgroundImg} alt="preload"></img>
+                <img src={resultAp} alt="preload"></img>
+                <img src={resultBp} alt="preload"></img>
+                <img src={resultCp} alt="preload"></img>
+                <img src={resultDp} alt="preload"></img>
+            </div>
+            </>
         )
     }
 }

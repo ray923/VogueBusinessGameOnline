@@ -33,6 +33,14 @@ html{
 .wechatimg img{
   max-width: 100%;
 }
+.noshow {
+  display: none;
+}
+
+
+
+
+
 
 
 .App-cover-logo {
@@ -403,26 +411,36 @@ html{
   position: absolute;
   top: 7.081vh;
   left: 0.72rem;
-  background-color: white;
-  height: 18.707rem;
+  bottom:9vh;
+  right:0.7447rem;
+
+  background-color:black;
+
+  /* 65.763 */
+}
+.App-q3-clock{
+  position: absolute;
+  left:0;
+  top:18vh;
+}
+.App-q3-clock img{
+  display:block;
   width:8.533rem;
-  background: url(./asserts/pic/q3background.png) no-repeat;
-  background-size:100% 100%;
+  bottom:0
 }
 .App-q3-q3qtitle {
   position: relative;
   left:0.64rem;
-  top:2.28rem;
+  top:10.53vh;
 }
 .App-q3-q3qtitle img {
   display: block;
-  width:7rem;
-  height:1.501rem;
+  height:6.835vh;
 }
 .App-q3-circle-p{
   position: absolute;
   left: 5.787rem;
-  top: 13.813rem;
+  top: 63.793vh;
   width: 1.92rem;
   height: 1.92rem;
   background:rgb(253,170,169);
@@ -442,26 +460,24 @@ html{
 .App-q3-q1optionA {
   position: absolute;
   left:0.653rem;
-  top:12.84rem;
+  top:59.298vh;
 }
 .App-q3-q1optionA img {
   display: block;
-  width: 3.946rem;
-  height: 1.095rem;
+  height: 4.988vh;
 }
 .App-q3-q1optionB {
   position: absolute;
   left:0.653rem;
-  top:14.56rem;
+  top:67.241vh;
 }
 .App-q3-q1optionB img {
   display: block;
-  width: 3.946rem;
-  height: 1.095rem;
+  height: 4.988vh;
 }
 .App-q3-apattern {
   position: absolute;
-  top:6.16rem;
+  top:2rem;
   left:5.52rem;
   transform-origin: left bottom;
 }
@@ -472,7 +488,7 @@ html{
 }
 .App-q3-bpattern {
   position: absolute;
-  top:8.24rem;
+  top:3.733rem;
   left:0.8rem;
   transform-origin: right center;
 }
@@ -748,17 +764,16 @@ html{
 }
 .App-fillname-logo {
   position: absolute;
-  top: 0.587rem;
+  top: 2.709vh;
   left:0.693rem;
 }
 .App-fillname-logo img{
   display: block;
-  height:0.387rem;
-  width:5.493rem;
+  height:1.786vh;
 }
 .App-fillname-border {
   position: absolute;
-  top:1.547rem;
+  top:7.143vh;
   left:0.693rem;
   right:0.627rem;
   bottom:1.387rem;
@@ -766,7 +781,7 @@ html{
 }
 .App-fillname-title {
   position: absolute;
-  top:18.165vh;
+  top:15.165vh;
   left: 2.707rem;
 }
 .App-fillname-title img {
@@ -797,7 +812,7 @@ html{
 .App-fillname-nametitle {
   position: absolute;
   left: 2.667rem;
-  top: 43.996vh;
+  top: 39.996vh;
 }
 .App-fillname-nametitle img{
   display: block;
@@ -812,18 +827,20 @@ html{
 .App-fillname-fill input{
   display: block;
   width: 6.77rem;
-  height: 1.094rem;
+  height: 4.988vh;
   border:solid 0.013rem #0a29fb;
 }
 .App-fillname-man {
   position: absolute;
   top:24.138vh;
   left:0.947rem;
+  align-items: center;
+  vertical-align: middle;
 }
 .App-fillname-man img {
   display:block;
-  height:2.533rem;
-  width:2.533rem;
+  height:11.7vh;
+  margin: 0 auto
 }
 .App-fillname-women {
   position: absolute;
@@ -832,8 +849,7 @@ html{
 }
 .App-fillname-women img {
   display:block;
-  height:2.533rem;
-  width:2.533rem;
+  height:11.7vh;
 }
 
 

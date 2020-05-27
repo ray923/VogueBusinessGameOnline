@@ -10,6 +10,17 @@ import Qtitleblue from '../Motion/Qtitleblue'
 
 import CoverlogoforQ from '../Motion/coverlogoforQ';
 
+import q3background from '../../asserts/pic/q3background.png';
+import Q3clock from '../../asserts/pic/Q3clock.png'
+import q4acontent from '../../asserts/pic/q4acontent.png';
+import q4apattern from '../../asserts/pic/q4apattern.png';
+import q4bcontent from '../../asserts/pic/q4bcontent.png';
+import q4bpattern from '../../asserts/pic/q4bpattern.png';
+import q5p from '../../asserts/pic/q5p.png';
+
+
+
+
 export class Q1 extends Component{
     constructor(props){
         super(props);
@@ -36,6 +47,7 @@ export class Q1 extends Component{
 
     render() {
         return (
+            <>
             <div className="App">
                 <CoverlogoforQ/>
                 <div className="App-q1-background">
@@ -55,6 +67,16 @@ export class Q1 extends Component{
                 </div>
                 <Q1People/>
             </div>
+            <div className="noshow">
+                <img src={Q3clock} alt="preload"></img>
+                <img src={q3background} alt="preload"></img>
+                <img src={q4acontent} alt="preload"></img>
+                <img src={q4apattern} alt="preload"></img>
+                <img src={q4bcontent} alt="preload"></img>
+                <img src={q4bpattern} alt="preload"></img>
+                <img src={q5p} alt="preload"></img>
+            </div>
+            </>
         )
     }
 }

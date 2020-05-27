@@ -14,13 +14,12 @@
     <script type="text/javascript">
       var createHTMLImage = function a() 
       {
-          window.scroll(0,0);
-          setTimeout(
+          setTimeout(function B(){
           html2canvas(document.body).then(function(canvas) 
           {
             var img = Canvas2Image.convertToJPEG(canvas, canvas.width, canvas.height);
             document.getElementById("wechatimg").appendChild(img);
-          }),2000);
+          })},2500);
       };
       new brickjs.MShare({
           site: "1",
@@ -51,6 +50,16 @@
     <div id="root"></div>
   </body>
   <script type="text/javascript">
+    var html = document.getElementsByTagName('html')[0];
+    var settedFs = settingFs = parseFloat(html.style.fontSize);
+    var realFs = parseFloat(window.getComputedStyle(html).fontSize);
+    var delta = realFs - settedFs;
+    if (Math.abs(delta) >= 1)
+    {
+      var settingFs = settedFs * settedFs/realFs;
+      html.setAttribute('style', 'font-size:'+settingFs + 'px!important');
+    }
+
     $("#inputname").focus(function () {
         window.scroll(0,0);
       });

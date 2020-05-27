@@ -17,7 +17,7 @@ export default function App() {
     return (
       <HashRouter>
         <Route exact path='/' component={Cover} />
-        <Route exact path='/precover' component={PreCover} />
+        <Route exact path='/cover' component={PreCover} />
         <SubApp/>
         
         <Route exact path='/resulta/:name' component={ResultA} />

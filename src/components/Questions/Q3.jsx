@@ -10,6 +10,7 @@ import CoverlogoforQ from '../Motion/coverlogoforQ';
 import NextButton from '../Motion/next';
 import Q3pattern from '../Motion/Q3pattern';
 import Q3patternanti from '../Motion/Q3patternanti'
+import Q3clock from '../../asserts/pic/Q3clock.png'
 
 export class Q3 extends Component{
     constructor(props){
@@ -46,18 +47,24 @@ export class Q3 extends Component{
                     <div className="App-q3-q3qtitle">
                         <img src={q3qtitle} alt="q3qtitle"></img>
                     </div>
+                    <div className="App-q3-clock">
+                        <img src={Q3clock} alt='clock'></img>
+                        <Q3pattern divclass="App-q3-apattern" imgsrc={q3ap} />
+                        <Q3patternanti divclass="App-q3-bpattern" imgsrc={q3bp} />
+                    </div>
+
                     <div onClick={(e)=>this.onSelection(5,"a",e)} className="App-q3-q1optionA">
                         <img src={q3a} alt="q3a"></img>
                     </div>
                     <div onClick={(e)=>this.onSelection(10,"b",e)} className="App-q3-q1optionB">
                         <img src={q3b} alt="q3b"></img>
                     </div>
-                    <Q3pattern divclass="App-q3-apattern" imgsrc={q3ap} />
-                    <Q3patternanti divclass="App-q3-bpattern" imgsrc={q3bp} />
+                    
                     <div className="App-q3-bpattern-direction"></div>
                     <Link to={()=> { return '/q4/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>
                         <NextButton divclass="App-q3-circle-p"/>
                     </Link>
+
                 </div>
             </div>
         )
