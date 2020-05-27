@@ -33,6 +33,7 @@ export class Q1 extends Component{
         }
     }
 
+
     render() {
         return (
             <div className="App">

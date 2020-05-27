@@ -37,6 +37,7 @@ export class Q4 extends Component{
         }
     }
 
+
     render() {
         return (
             <div className="App">
@@ -48,13 +49,15 @@ export class Q4 extends Component{
                     <div className="App-q4-q4qtitle">
                         <img src={q4qtitle} alt="q4qtitle"></img>
                     </div>
-                    <div onClick={(e)=>this.onSelection(5,"a",e)}>
-                        <Q4Apattern/>
-                        <Q4selection divclass="App-q4-q4aoption" imgpath={q4a} />
-                    </div>
-                    <div onClick={(e)=>this.onSelection(10,"b",e)}>
-                        <Q4Bpattern/>
-                        <Q4selection divclass="App-q4-q4boption" imgpath={q4b} />
+                    <div className="App-q4-frame">
+                        <div onClick={(e)=>this.onSelection(5,"a",e)}>
+                            <Q4Apattern/>
+                            <Q4selection divclass="App-q4-q4aoption" imgpath={q4a} />
+                        </div>
+                        <div onClick={(e)=>this.onSelection(10,"b",e)}>
+                            <Q4Bpattern/>
+                            <Q4selection divclass="App-q4-q4boption" imgpath={q4b} />
+                        </div>
                     </div>
                     <Link to={()=> { return '/q5/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>
                         <NextButton divclass="App-q4-circle-p"/>

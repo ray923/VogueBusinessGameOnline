@@ -74,6 +74,7 @@ export class FillName extends Component{
                     </div>
                     <div className="App-fillname-fill">
                         <input 
+                            id="inputname"
                             type="text"
                             value = {this.state.name}
                             onChange={this.onChangeName}

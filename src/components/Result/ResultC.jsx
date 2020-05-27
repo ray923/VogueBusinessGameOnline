@@ -9,6 +9,8 @@ import content from '../../asserts/pic/resultCcontent.png';
 import share from '../../asserts/pic/resultAshare.png';
 import resultCp from '../../asserts/pic/resultCp.png';
 import CoverlogoforQ from '../Motion/coverlogoforQ';
+import resultwhite from '../../asserts/pic/resultwhite.png';
+import resultbackground from '../../asserts/pic/resultCbackground.png';
 
 export class ResultC extends Component{
     constructor(props){
@@ -20,14 +22,16 @@ export class ResultC extends Component{
     }
 
     componentDidMount(){
-        window.createHTMLImage();
+        setTimeout(window.createHTMLImage(), 2000);
     }
 
     render() {
         return (
             <div className="App-resultC">
+                <img className="App-resultA-backimg" alt='background' src={resultbackground}></img>
                 <CoverlogoforQ/>
                 <div className="App-resultA-background">
+                <img className="App-resultA-white" alt='background' src={resultwhite}></img>
                     <div className='App-result-typeA'>
                         <img src={typeC} alt='typea'></img>
                     </div>
@@ -37,17 +41,16 @@ export class ResultC extends Component{
                         <img src={ResultCtitle} alt='resulttitle'></img>
                     </div>
                     <img src={contentborder} alt='contentborder' className="App-resultC-content-borderimg"></img>
-                    <img src={content} alt='content' className="App-resultC-contentimg"></img>
-                    <div className="App-resultC-circle-red">
+                    <div className="App-resultC-circle-red sharenotshow" id="sharebutton" >
                         <img src={share} alt='share'></img>
                     </div>
-                </div>
-                <div className="App-resultC-p">
-                    <img src={resultCp} alt='backgroundpattern'></img>
                 </div>
                 <Link to='/booking'>
                     <div id="wechatimg" className="wechatimg"></div>
                 </Link>
+                <div className="App-resultC-p">
+                    <img src={resultCp} alt='backgroundpattern'></img>
+                </div>
             </div>
         )
     }

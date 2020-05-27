@@ -15,7 +15,7 @@ import {Booking} from './components/Result/Booking'
 export default function SubApp() {
 
     const location = useLocation()
-    const config = { mass: 5, tension: 200, friction: 30 }
+    const config = { mass: 1, tension: 200, friction: 30 }
     const transitions = useTransition(location, location => location.pathname, {
       config,
       from: { opacity: 0, transform: 'translate3d(0,0,0)' },
@@ -26,7 +26,7 @@ export default function SubApp() {
 
     return transitions.map(({ item: location, props, key }) => (
         <animated.div key={key} style={props}>
-          <Switch location={location}>
+
             
             <Route exact path='/q1' component={Q1} />
             <Route exact path='/q2/:score' component={Q2} />
@@ -34,8 +34,8 @@ export default function SubApp() {
             <Route exact path='/q4/:score' component={Q4} />
             <Route exact path='/q5/:score' component={Q5} />
             <Route exact path='/fillname/:score' component={FillName} />
-            <Route exact path='/booking' component={Booking} />
-          </Switch>
+            
+
         </animated.div>
       ))
 }

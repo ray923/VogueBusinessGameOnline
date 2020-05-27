@@ -15,7 +15,6 @@ export default function Q2selectionA(props) {
     
     const trail = useTrail(items.length,
         {   config:config.slow,
-            delay: 800,
             width:'100%',
             opacity:1,
             from: {width:'0%',opacity:1} 

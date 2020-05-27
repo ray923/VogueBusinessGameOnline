@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#000000" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -14,12 +14,13 @@
     <script type="text/javascript">
       var createHTMLImage = function a() 
       {
-          html2canvas(document.getElementById("root")).then(function(canvas) 
+          window.scroll(0,0);
+          setTimeout(
+          html2canvas(document.body).then(function(canvas) 
           {
             var img = Canvas2Image.convertToJPEG(canvas, canvas.width, canvas.height);
             document.getElementById("wechatimg").appendChild(img);
-            $("#wechatimg").removeClass("imgNotCreated");
-          });
+          }),2000);
       };
       new brickjs.MShare({
           site: "1",
@@ -49,4 +50,12 @@
   <body>
     <div id="root"></div>
   </body>
+  <script type="text/javascript">
+    $("#inputname").focus(function () {
+        window.scroll(0,0);
+      });
+    $("#inputname").blur(function () {
+        window.scroll(0,0);
+      });
+  </script>
 </html>

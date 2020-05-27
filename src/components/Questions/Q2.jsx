@@ -34,6 +34,7 @@ export class Q2 extends Component{
         }
     }
 
+
     render() {
         return (
             <div className="App">

@@ -34,6 +34,7 @@ export class Q3 extends Component{
         }
     }
 
+
     render() {
         return (
             <div className="App">
@@ -58,7 +59,6 @@ export class Q3 extends Component{
                         <NextButton divclass="App-q3-circle-p"/>
                     </Link>
                 </div>
-                <div className="App-q3-mask"></div>
             </div>
         )
     }

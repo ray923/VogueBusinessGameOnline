@@ -9,8 +9,8 @@ import content from '../../asserts/pic/resultAcontent.png';
 import share from '../../asserts/pic/resultAshare.png';
 import resultAp from '../../asserts/pic/resultAp.png';
 import CoverlogoforQ from '../Motion/coverlogoforQ';
-import resultbackground from '../../asserts/pic/resultAbackground.png'
-
+import resultbackground from '../../asserts/pic/resultAbackground.png';
+import resultwhite from '../../asserts/pic/resultwhite.png';
 export class ResultA extends Component{
     constructor(props){
         super(props)
@@ -31,22 +31,23 @@ export class ResultA extends Component{
                 <img className="App-resultA-backimg" alt='background' src={resultbackground}></img>
                 <CoverlogoforQ/>
                 <div className="App-resultA-background">
+                    <img className="App-resultA-white" alt='background' src={resultwhite}></img>
                     <div className='App-result-typeA'>
-                        <img src={typeA} alt='typea'></img>
+                        <img src={typeA} rel="preload" alt='typea'></img>
                     </div>
                     <ResultName name={this.state.name}></ResultName>
                     <ResultQR></ResultQR>
                     <div className='App-resultA-title'>
-                        <img src={ResultAtitle} alt='resulttitle'></img>
+                        <img src={ResultAtitle} rel="preload" alt='resulttitle'></img>
                     </div>
-                    <img src={contentborder} alt='contentborder' className="App-resultA-content-borderimg"></img>
-                    <img src={content} alt='content' className="App-resultA-contentimg"></img>
-                    <div className="App-resultA-circle-red">
-                        <img src={share} alt='share'></img>
+                    <img src={contentborder} rel="preload" alt='contentborder' className="App-resultA-content-borderimg"></img>
+                    <img src={content} rel="preload" alt='content' className="App-resultA-contentimg"></img>
+                    <div className="App-resultA-circle-red sharenotshow" id="sharebutton" >
+                        <img src={share}  rel="preload" alt='share'></img>
                     </div>
                 </div>
                 <div className="App-resultA-p">
-                    <img src={resultAp} alt='backgroundpattern'></img>
+                    <img src={resultAp} rel="preload" alt='backgroundpattern'></img>
                 </div>
                 <Link to='/booking'>
                     <div id="wechatimg" className="wechatimg"></div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import coverp from '../asserts/pic/cover.png';
@@ -14,9 +14,9 @@ const itemAs = [start]
 export default function Cover() {    
 
     const people = useSpring({
-        from: { opacity: 0, transform: 'scale(0)' },
-        to: { opacity: 1, transform: 'scale(1)' },
-        delay: 1700,
+        from: { opacity: 0},
+        to: { opacity: 1},
+        delay: 1000,
         config: { mass: 5, tension: 2000, friction: 1000 }
     })
 
@@ -39,6 +39,8 @@ export default function Cover() {
         delay: 1700,
         config: { mass: 1, tension: 100, friction: 30 }
     })
+
+
     
     return (
         <>

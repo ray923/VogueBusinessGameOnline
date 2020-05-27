@@ -7,7 +7,6 @@ export default function Q1a(props) {
 
     const transitiona = useTransition(items,null, {
         config:config.molasses,
-        delay:2000,
         from: { transform: 'translate3d(0,-40px,0)' },
         enter: { transform: 'translate3d(0,0px,0)' },
     })
