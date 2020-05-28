@@ -776,6 +776,7 @@ html{
   text-align: center;
   position: absolute;
   height:100vh;
+  /* height:21.653rem; */
   width:100vw;
   z-index: 0;
 }
@@ -790,6 +791,7 @@ html{
 .App-fillname-logo {
   position: absolute;
   top: 2.709vh;
+  /* top:0.587rem; */
   left:0.693rem;
 }
 .App-fillname-logo img{
@@ -799,6 +801,7 @@ html{
 .App-fillname-border {
   position: absolute;
   top:7.143vh;
+  /* top:1.547rem; */
   left:0.693rem;
   right:0.627rem;
   bottom:1.387rem;
@@ -807,6 +810,7 @@ html{
 .App-fillname-title {
   position: absolute;
   top:15.165vh;
+  /* top:3.7rem; */
   left: 2.707rem;
 }
 .App-fillname-title img {
@@ -818,6 +822,7 @@ html{
   position: absolute;
   left: 3.093rem;
   top: 58vh;
+  /* top:13.347rem; */
   width: 2.365rem;
   height: 2.365rem;
   background:rgb(253,170,169);
@@ -838,6 +843,7 @@ html{
   position: absolute;
   left: 2.667rem;
   top: 39.996vh;
+  /* top:9rem; */
 }
 .App-fillname-nametitle img{
   display: block;
@@ -847,17 +853,20 @@ html{
 .App-fillname-fill {
   position: absolute;
   top:47.968vh;
+  /* top:10.387rem; */
   left:0.947rem;
 }
 .App-fillname-fill input{
   display: block;
   width: 6.77rem;
   height: 4.988vh;
+  /* height:1.08rem; */
   border:solid 0.013rem #0a29fb;
 }
 .App-fillname-man {
   position: absolute;
   top:24.138vh;
+  /* top:5.227rem; */
   left:0.947rem;
   align-items: center;
   vertical-align: middle;
@@ -865,16 +874,19 @@ html{
 .App-fillname-man img {
   display:block;
   height:11.7vh;
+  /* height:2.533rem; */
   margin: 0 auto
 }
 .App-fillname-women {
   position: absolute;
   top:24.138vh;
+  /* top:5.227rem; */
   left:5.093rem;
 }
 .App-fillname-women img {
   display:block;
   height:11.7vh;
+  /* height:2.533rem; */
 }
 
 

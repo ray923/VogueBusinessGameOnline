@@ -18,8 +18,8 @@ import q4apattern from '../../asserts/pic/q4apattern.png';
 import q4bcontent from '../../asserts/pic/q4bcontent.png';
 import q4bpattern from '../../asserts/pic/q4bpattern.png';
 import q5p from '../../asserts/pic/q5p.png';
-
-
+import q4acontentact from '../../asserts/pic/q4acontentActive.png';
+import q4bcontentact from '../../asserts/pic/q4bcontentActive.png';
 
 
 export class Q1 extends Component{
@@ -77,6 +77,8 @@ export class Q1 extends Component{
                 <img src={q4bcontent} alt="preload"></img>
                 <img src={q4bpattern} alt="preload"></img>
                 <img src={q5p} alt="preload"></img>
+                <img src={q4acontentact} alt="preload"></img>
+                <img src={q4bcontentact} alt="preload"></img>
             </div>
             </>
         )

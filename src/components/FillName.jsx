@@ -4,7 +4,9 @@ import fillnamelogo from '../asserts/pic/fillnamelogo.png'
 import fillnametitle from '../asserts/pic/fillnametitle.png';
 import fillnametitle2 from '../asserts/pic/fillnametitle2.png';
 import fillnamemale from '../asserts/pic/fillnamemale.png';
+import fillnamemaleact from '../asserts/pic/fillnamemaleActive.png';
 import fillnamefemale from '../asserts/pic/fillnamefemale.png';
+import fillnamefemaleact from '../asserts/pic/fillnamefemaleActive.png';
 import fillnamenext from '../asserts/pic/fillnamenext.png';
 import backgroundImg from '../asserts/pic/fillnamebackground.png'
 
@@ -67,8 +69,8 @@ export class FillName extends Component{
                     <div className="App-fillname-title">
                         <img src={fillnametitle} alt='selectGender'></img>
                     </div>
-                    <SelectGender gender="MAN" setGender = {this.setGender.bind(this)} imggender={fillnamemale} genderclass="App-fillname-man"/>
-                    <SelectGender gender="WOMEN" setGender = {this.setGender.bind(this)} imggender={fillnamefemale} genderclass="App-fillname-women"/>
+                    <SelectGender gender="MAN" setGender = {this.setGender.bind(this)} imggender={this.state.gender==="MAN"?fillnamemaleact:fillnamemale} genderclass="App-fillname-man"/>
+                    <SelectGender gender="WOMEN" setGender = {this.setGender.bind(this)} imggender={this.state.gender==="WOMEN"?fillnamefemaleact:fillnamefemale} genderclass="App-fillname-women"/>
                     <div className="App-fillname-nametitle">
                         <img src={fillnametitle2} alt='fillname'></img>
                     </div>

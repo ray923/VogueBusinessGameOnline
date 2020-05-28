@@ -17,6 +17,13 @@ import acontent3 from '../asserts/pic/optacontent3.png';
 import bcontent1 from '../asserts/pic/optbcontent1.png';
 import bcontent2 from '../asserts/pic/optbcontent2.png';
 import bcontent3 from '../asserts/pic/optbcontent3.png';
+import acontent1act from '../asserts/pic/optacontent1Active.png';
+import acontent2act from '../asserts/pic/optacontent2Active.png';
+import acontent3act from '../asserts/pic/optacontent3Active.png';
+import bcontent1act from '../asserts/pic/optbcontent1Active.png';
+import bcontent2act from '../asserts/pic/optbcontent2Active.png';
+import bcontent3act from '../asserts/pic/optbcontent3Active.png';
+
 
 // import q3background from '../asserts/pic/q3background.png';
 // import Q3clock from '../asserts/pic/Q3clock.png'
@@ -98,6 +105,12 @@ export default function Cover() {
             <img src={bcontent1} alt="preload"></img>
             <img src={bcontent2} alt="preload"></img>
             <img src={bcontent3} alt="preload"></img>
+            <img src={acontent1act} alt="preload"></img>
+            <img src={acontent2act} alt="preload"></img>
+            <img src={acontent3act} alt="preload"></img>
+            <img src={bcontent1act} alt="preload"></img>
+            <img src={bcontent2act} alt="preload"></img>
+            <img src={bcontent3act} alt="preload"></img>
         </div>
         <Lines time={800}/>
         </>          
