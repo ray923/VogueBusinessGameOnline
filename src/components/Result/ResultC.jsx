@@ -11,6 +11,10 @@ import CoverlogoforQ from '../Motion/coverlogoforQ';
 import resultwhite from '../../asserts/pic/resultwhite.png';
 import resultbackground from '../../asserts/pic/resultCbackground.png';
 
+import knowmoretitle from '../../asserts/pic/knowmoretitle.png';
+import knowmorelight from '../../asserts/pic/knowmorelight.png';
+import knowmorehand from '../../asserts/pic/knowmorehand.png';
+
 export class ResultC extends Component{
     constructor(props){
         super(props)
@@ -44,12 +48,18 @@ export class ResultC extends Component{
                         <img src={share} alt='share'></img>
                     </div>
                 </div>
-                <Link to='/booking'>
-                    <div id="wechatimg" className="wechatimg"></div>
-                </Link>
                 <div className="App-resultC-p">
                     <img src={resultCp} alt='backgroundpattern'></img>
                 </div>
+                <div id="wechatimg" className="wechatimg">
+                </div>
+                <Link to='/booking'>
+                    <div id="knowmore" className="click-area sharenotshow">
+                        <img src={knowmoretitle} alt="knowmore" className="knowmoretitle"></img>
+                        <img src={knowmorelight} alt="knowmore" className="knowmorelight"></img>
+                        <img src={knowmorehand} alt="knowmore" className="knowmorehand"></img>
+                    </div>
+                </Link>
             </div>
         )
     }

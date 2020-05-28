@@ -12,6 +12,10 @@ import { Link } from 'react-router-dom';
 import resultwhite from '../../asserts/pic/resultwhite.png';
 import resultbackground from '../../asserts/pic/resultDbackground.png';
 
+import knowmoretitle from '../../asserts/pic/knowmoretitle.png';
+import knowmorelight from '../../asserts/pic/knowmorelight.png';
+import knowmorehand from '../../asserts/pic/knowmorehand.png';
+
 export class ResultD extends Component{
     constructor(props){
         super(props)
@@ -51,8 +55,14 @@ export class ResultD extends Component{
                 <div className="App-resultD-p">
                     <img src={resultDp} alt='backgroundpattern'></img>
                 </div>
+                <div id="wechatimg" className="wechatimg">
+                </div>
                 <Link to='/booking'>
-                    <div id="wechatimg" className="wechatimg"></div>
+                    <div id="knowmore" className="click-area sharenotshow">
+                        <img src={knowmoretitle} alt="knowmore" className="knowmoretitle"></img>
+                        <img src={knowmorelight} alt="knowmore" className="knowmorelight"></img>
+                        <img src={knowmorehand} alt="knowmore" className="knowmorehand"></img>
+                    </div>
                 </Link>
             </div>
         )

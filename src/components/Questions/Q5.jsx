@@ -44,7 +44,7 @@ export class Q5 extends Component{
                         <img src={q5qtitle} alt="q5qtitle"></img>
                     </div>
                     <Q5selection selected={this.state.selected} onChoose={this.onSelection.bind(this)}/>
-                    <Link to={()=> { return '/fillname/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>
+                    <Link to={()=> { return this.state.thisscore > 0 ? '/fillname/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : null}}>
                         <NextButton divclass="App-q5-circle-p"/>
                     </Link>
                 </div>

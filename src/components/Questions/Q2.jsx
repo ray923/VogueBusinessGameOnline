@@ -16,7 +16,7 @@ import resultAp from '../../asserts/pic/resultAp.png';
 import resultBp from '../../asserts/pic/resultBp.png';
 import resultCp from '../../asserts/pic/resultCp.png';
 import resultDp from '../../asserts/pic/resultDp.png';
-
+import bookingp from '../../asserts/pic/bookingp.png';
 
 export class Q2 extends Component{
 
@@ -55,19 +55,19 @@ export class Q2 extends Component{
                     <div className="App-q2-q2qtitle">
                         <img src={q2qtitle} alt="q2qtitle"></img>
                     </div>
-                    <div onClick={(e)=>this.onSelection(5,"a",e)} className="App-q2-optionA">
+                    <div onClick={(e)=>this.onSelection(10,"a",e)} className="App-q2-optionA">
                         <img src={"a"===this.state.selected?q2aactive:q2a} alt='optionA' className="App-q2-optionA-title"></img>
 
                         <Q2selectionA selected={this.state.selected}/>
 
                     </div>
-                    <div onClick={(e)=>this.onSelection(10,"b",e)} className="App-q2-optionB">
+                    <div onClick={(e)=>this.onSelection(5,"b",e)} className="App-q2-optionB">
                         <img src={"b"===this.state.selected?q2bactive:q2b} alt='optionB' className="App-q2-optionB-title"></img>
                         
                         <Q2selectionB selected={this.state.selected}/>
 
                     </div>
-                    <Link to={()=> { return '/q3/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>
+                    <Link to={()=> { return this.state.thisscore>0 ? '/q3/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : null }}>
                         <NextButton divclass="App-q2-circle-p"/>
                     </Link>
                 </div>
@@ -78,6 +78,7 @@ export class Q2 extends Component{
                 <img src={resultBp} alt="preload"></img>
                 <img src={resultCp} alt="preload"></img>
                 <img src={resultDp} alt="preload"></img>
+                <img src={bookingp} alt="preload"></img>
             </div>
             </>
         )

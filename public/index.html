@@ -20,6 +20,7 @@
           {
             var img = Canvas2Image.convertToJPEG(canvas, canvas.width, canvas.height);
             document.getElementById("wechatimg").appendChild(img);
+            document.getElementById("knowmore").classList.remove("sharenotshow");
           })},2500);
       };
       new brickjs.MShare({

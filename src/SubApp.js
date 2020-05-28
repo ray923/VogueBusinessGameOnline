@@ -9,8 +9,11 @@ import {Q3} from './components/Questions/Q3'
 import {Q4} from './components/Questions/Q4'
 import {Q5} from './components/Questions/Q5'
 import {FillName} from './components/FillName'
-// import {Booking} from './components/Result/Booking'
-
+import {Booking} from './components/Result/Booking'
+import {ResultA} from './components/Result/ResultA'
+import {ResultB} from './components/Result/ResultB'
+import {ResultC} from './components/Result/ResultC'
+import {ResultD} from './components/Result/ResultD'
 
 export default function SubApp() {
 
@@ -34,8 +37,13 @@ export default function SubApp() {
             <Route exact path='/q4/:score' component={Q4} />
             <Route exact path='/q5/:score' component={Q5} />
             <Route exact path='/fillname/:score' component={FillName} />
-            
 
+            <Route exact path='/resulta/:name' component={ResultA} />
+            <Route exact path='/resultb/:name' component={ResultB} />
+            <Route exact path='/resultc/:name' component={ResultC} />
+            <Route exact path='/resultd/:name' component={ResultD} />
+
+            <Route exact path='/booking' component={Booking} />
         </animated.div>
       ))
 }

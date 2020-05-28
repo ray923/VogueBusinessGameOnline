@@ -112,7 +112,6 @@ export default function Cover() {
             <img src={bcontent2act} alt="preload"></img>
             <img src={bcontent3act} alt="preload"></img>
         </div>
-        <Lines time={800}/>
         </>          
     );
 }

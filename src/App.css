@@ -729,11 +729,11 @@ html{
 }
 .App-q5-circle-p img{
   display: block;
-  width:1.541rem;
-  height:0.824rem;
+  width:1。013rem;
+  height:0.813rem;
   position: absolute;
-  left:0.162rem;
-  top:0.608rem;
+  left:0.463rem;
+  top:0.553rem;
 }
 .App-q5-q5optioinA {
   position: absolute;
@@ -760,6 +760,7 @@ html{
   left:0;
   bottom:1.413rem;
   transform-origin: right center;
+  pointer-events: none;
 }
 .App-q5-q5p img{
   display: block;
@@ -1200,8 +1201,8 @@ html{
 .App-resultB-p {
   position: absolute;
   right:0;
-  /* top:12.413rem; */
-  bottom:0;
+  top:57.389vh;
+  /* bottom:0; */
 }
 .App-resultB-p img {
   display: block;
@@ -1265,7 +1266,8 @@ html{
 .App-resultC-p {
   position: absolute;
   left:0;
-  bottom:0;
+  /* bottom:0; */
+  top:57.943vh;
 }
 .App-resultC-p img {
   display: block;
@@ -1310,7 +1312,7 @@ html{
 .App-resultD-content-borderimg {
   position: absolute;
   left:0.347rem;
-  top:5.493rem;
+  top:25.369vh;
   width:7.905rem;
   height:3.181rem;
   display: block;
@@ -1321,7 +1323,7 @@ html{
   height:1.824rem;
   position: absolute;
   left:1.32rem;
-  top:6.28rem;
+  top:30vh;
 }
 .App-resultD-circle-red {
   position: absolute;
@@ -1345,15 +1347,93 @@ html{
 }
 .App-resultD-p {
   position: absolute;
-  top:1.413rem;
+  top:53.847vh;
   left:0;
 }
 .App-resultD-p img {
   display: block;
   width:10rem;
 }
+
+
+
+
+
 .sharenotshow {
-  display: block;
+  display: none;
+}
+.click-area{
+  position: absolute;
+  top:4.987rem;
+  left:7.64rem;
+  z-index: 6;
+}
+.knowmoretitle {
+  position:absolute;
+  display:block;
+  top:1.067rem;
+  left:0;
+  width:1.427rem;
+  height:0.24rem;
+}
+@media (prefers-reduced-motion: no-preference){
+  .knowmorehand {
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width:1.08rem;
+    height:0.853rem;
+    animation: handclick infinite 1.7s linear;
+  }
+  .knowmorelight {
+    position:absolute;
+    display:block;
+    top:0.027rem;
+    left:0.947rem;
+    width:0.333rem;
+    height:0.627rem;
+    animation: shinning infinite 0.7s linear;
+  }
+}
+@-webkit-keyframes shinning {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@keyframes shinning {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes handclick {
+  0% {
+      -webkit-transform: translate3d(-7px,0,0);
+      opacity: 0;
+  }
+  100% {
+      -webkit-transform: translate3d(0,0,0);
+      opacity: 1;
+  }
+}
+@keyframes handclick {
+  0% {
+      transform: translate3d(-7px,0,0);
+      -webkit-transform: translate3d(-7px,0,0);
+      opacity: 0;
+  }
+  100% {
+      transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      opacity: 1;      
+  }
 }
 
 /* @media (prefers-reduced-motion: no-preference) {

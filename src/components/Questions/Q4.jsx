@@ -61,7 +61,7 @@ export class Q4 extends Component{
                             <Q4selection divclass="App-q4-q4boption" imgpath={"b"===this.state.selected?q4bact:q4b} />
                         </div>
                     </div>
-                    <Link to={()=> { return '/q5/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>
+                    <Link to={()=> { return this.state.thisscore >0 ? '/q5/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : null}}>
                         <NextButton divclass="App-q4-circle-p"/>
                     </Link>
                 </div>

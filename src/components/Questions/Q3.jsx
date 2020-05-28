@@ -55,15 +55,15 @@ export class Q3 extends Component{
                         <Q3patternanti divclass="App-q3-bpattern" imgsrc={q3bp} />
                     </div>
 
-                    <div onClick={(e)=>this.onSelection(5,"a",e)} className="App-q3-q1optionA">
+                    <div onClick={(e)=>this.onSelection(10,"a",e)} className="App-q3-q1optionA">
                         <img src={"a"===this.state.selected?q3aact:q3a} alt="q3a"></img>
                     </div>
-                    <div onClick={(e)=>this.onSelection(10,"b",e)} className="App-q3-q1optionB">
+                    <div onClick={(e)=>this.onSelection(5,"b",e)} className="App-q3-q1optionB">
                         <img src={"b"===this.state.selected?q3bact:q3b} alt="q3b"></img>
                     </div>
                     
                     <div className="App-q3-bpattern-direction"></div>
-                    <Link to={()=> { return '/q4/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>
+                    <Link to={()=> { return this.state.thisscore>0 ? '/q4/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : null}}>
                         <NextButton divclass="App-q3-circle-p"/>
                     </Link>
 

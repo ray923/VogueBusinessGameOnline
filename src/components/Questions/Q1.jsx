@@ -58,11 +58,11 @@ export class Q1 extends Component{
                     <div className="App-q1-q1qtitle">
                         <img src={q1qtitle} alt="q1qtitle"></img>
                     </div>
-                    <Q1a divclass={"a"===this.state.selected?"App-q1-q1optionA-active":"App-q1-q1optionA"} score="5" selectedopt="a" onSelection={this.onSelection.bind(this)} optcontent="为我挣10个亿"/>
+                    <Q1a divclass={"a"===this.state.selected?"App-q1-q1optionA-active":"App-q1-q1optionA"} score="10" selectedopt="a" onSelection={this.onSelection.bind(this)} optcontent="为我挣10个亿"/>
                     
-                    <Q1b divclass={"b"===this.state.selected?"App-q1-q1optionB-active":"App-q1-q1optionB"} score="10" selectedopt="b" onSelection={this.onSelection.bind(this)} optcontent="做我集团的门面"/>
+                    <Q1b divclass={"b"===this.state.selected?"App-q1-q1optionB-active":"App-q1-q1optionB"} score="5" selectedopt="b" onSelection={this.onSelection.bind(this)} optcontent="做我集团的门面"/>
 
-                    <Link to={()=> { return '/q2/' + (this.state.thisscore + this.state.totalscore)}}>
+                    <Link to={()=> { return this.state.thisscore>0 ? '/q2/' + (this.state.thisscore + this.state.totalscore) : null }}>
                         <NextButton divclass="App-q1-circle-p"/>
                     </Link>
                 </div>
