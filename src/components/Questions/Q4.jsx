@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import q1title from '../../asserts/pic/FashionM&A4.png';
 import q4qtitle from '../../asserts/pic/q4qtitle.png';
 import q4a from '../../asserts/pic/q4a.png';
+import q4aact from '../../asserts/pic/q4aActive.png';
 import q4b from '../../asserts/pic/q4b.png';
+import q4bact from '../../asserts/pic/q4bActive.png';
 
 
 
@@ -51,12 +53,12 @@ export class Q4 extends Component{
                     </div>
                     <div className="App-q4-frame">
                         <div onClick={(e)=>this.onSelection(5,"a",e)}>
-                            <Q4Apattern/>
-                            <Q4selection divclass="App-q4-q4aoption" imgpath={q4a} />
+                            <Q4Apattern selected={this.state.selected}/>
+                            <Q4selection divclass="App-q4-q4aoption" imgpath={"a"===this.state.selected?q4aact:q4a} />
                         </div>
                         <div onClick={(e)=>this.onSelection(10,"b",e)}>
-                            <Q4Bpattern/>
-                            <Q4selection divclass="App-q4-q4boption" imgpath={q4b} />
+                            <Q4Bpattern selected={this.state.selected}/>
+                            <Q4selection divclass="App-q4-q4boption" imgpath={"b"===this.state.selected?q4bact:q4b} />
                         </div>
                     </div>
                     <Link to={()=> { return '/q5/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>

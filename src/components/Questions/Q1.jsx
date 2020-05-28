@@ -12,6 +12,7 @@ import CoverlogoforQ from '../Motion/coverlogoforQ';
 
 import q3background from '../../asserts/pic/q3background.png';
 import Q3clock from '../../asserts/pic/Q3clock.png'
+import q3bp from '../../asserts/pic/q3bpattern.png';
 import q4acontent from '../../asserts/pic/q4acontent.png';
 import q4apattern from '../../asserts/pic/q4apattern.png';
 import q4bcontent from '../../asserts/pic/q4bcontent.png';
@@ -57,9 +58,9 @@ export class Q1 extends Component{
                     <div className="App-q1-q1qtitle">
                         <img src={q1qtitle} alt="q1qtitle"></img>
                     </div>
-                    <Q1a divclass="App-q1-q1optionA" pclass="App-q1-q1optionA-content" score="5" selectedopt="a" onSelection={this.onSelection.bind(this)} optcontent="为我挣10个亿"/>
+                    <Q1a divclass={"a"===this.state.selected?"App-q1-q1optionA-active":"App-q1-q1optionA"} score="5" selectedopt="a" onSelection={this.onSelection.bind(this)} optcontent="为我挣10个亿"/>
                     
-                    <Q1b divclass="App-q1-q1optionB" pclass="App-q1-q1optionB-content" score="10" selectedopt="b" onSelection={this.onSelection.bind(this)} optcontent="做我集团的门面"/>
+                    <Q1b divclass={"b"===this.state.selected?"App-q1-q1optionB-active":"App-q1-q1optionB"} score="10" selectedopt="b" onSelection={this.onSelection.bind(this)} optcontent="做我集团的门面"/>
 
                     <Link to={()=> { return '/q2/' + (this.state.thisscore + this.state.totalscore)}}>
                         <NextButton divclass="App-q1-circle-p"/>
@@ -70,6 +71,7 @@ export class Q1 extends Component{
             <div className="noshow">
                 <img src={Q3clock} alt="preload"></img>
                 <img src={q3background} alt="preload"></img>
+                <img src={q3bp} alt="preload"></img>
                 <img src={q4acontent} alt="preload"></img>
                 <img src={q4apattern} alt="preload"></img>
                 <img src={q4bcontent} alt="preload"></img>

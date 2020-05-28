@@ -5,7 +5,9 @@ import q2qtitle from '../../asserts/pic/q2qtitle.png';
 import CoverlogoforQ from '../Motion/coverlogoforQ';
 import NextButton from '../Motion/next';
 import q2a from '../../asserts/pic/q2a.png';
+import q2aactive from '../../asserts/pic/q2aActive.png';
 import q2b from '../../asserts/pic/q2b.png';
+import q2bactive from '../../asserts/pic/q2bActive.png';
 import Q2selectionA from '../Motion/Q2selectionA';
 import Q2selectionB from '../Motion/Q2selectionB';
 
@@ -54,15 +56,15 @@ export class Q2 extends Component{
                         <img src={q2qtitle} alt="q2qtitle"></img>
                     </div>
                     <div onClick={(e)=>this.onSelection(5,"a",e)} className="App-q2-optionA">
-                        <img src={q2a} alt='optionB' className="App-q2-optionA-title"></img>
+                        <img src={"a"===this.state.selected?q2aactive:q2a} alt='optionA' className="App-q2-optionA-title"></img>
 
-                        <Q2selectionA/>
+                        <Q2selectionA selected={this.state.selected}/>
 
                     </div>
                     <div onClick={(e)=>this.onSelection(10,"b",e)} className="App-q2-optionB">
-                        <img src={q2b} alt='optionB' className="App-q2-optionB-title"></img>
+                        <img src={"b"===this.state.selected?q2bactive:q2b} alt='optionB' className="App-q2-optionB-title"></img>
                         
-                        <Q2selectionB/>
+                        <Q2selectionB selected={this.state.selected}/>
 
                     </div>
                     <Link to={()=> { return '/q3/' + (Number(this.state.thisscore) + Number(this.state.totalscore))}}>

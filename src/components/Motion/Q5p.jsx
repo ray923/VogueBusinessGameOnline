@@ -2,7 +2,7 @@ import React from 'react';
 import {animated,useSpring} from 'react-spring';
 import q5p from '../../asserts/pic/q5p.png';
 
-const items=["people"]
+// const items=["people"]
 
 export default function Q5p() {
 

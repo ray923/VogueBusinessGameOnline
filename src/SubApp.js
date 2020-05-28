@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route, useLocation} from 'react-router-dom';
+import {Route, useLocation} from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
 
 
@@ -9,7 +9,7 @@ import {Q3} from './components/Questions/Q3'
 import {Q4} from './components/Questions/Q4'
 import {Q5} from './components/Questions/Q5'
 import {FillName} from './components/FillName'
-import {Booking} from './components/Result/Booking'
+// import {Booking} from './components/Result/Booking'
 
 
 export default function SubApp() {

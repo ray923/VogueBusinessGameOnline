@@ -50,13 +50,15 @@
     <div id="root"></div>
   </body>
   <script type="text/javascript">
+
     var html = document.getElementsByTagName('html')[0];
-    var settedFs = settingFs = parseFloat(html.style.fontSize);
-    var realFs = parseFloat(window.getComputedStyle(html).fontSize);
+    var settedFs = parseFloat(html.style.fontSize);
+    var realFs = parseFloat(window.getComputedStyle(html).fontSize);  
     var delta = realFs - settedFs;
-    if (Math.abs(delta) >= 1)
+
+    if (Math.abs(delta) > 0)
     {
-      var settingFs = settedFs * settedFs/realFs;
+      var settingFs = realFs;
       html.setAttribute('style', 'font-size:'+settingFs + 'px!important');
     }
 

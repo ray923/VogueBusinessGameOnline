@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import coverp from '../asserts/pic/cover.png';
@@ -6,7 +6,7 @@ import covertitle from '../asserts/pic/covertitle.png';
 import covercontent from '../asserts/pic/covercontent.png';
 import CoverLogo from './Motion/coverlogo';
 import CoverTitle from './Motion/covertitle';
-import {animated, useTrail,useTransition,useSpring,config} from 'react-spring';
+import {animated,useSpring,config} from 'react-spring';
 import start from '../asserts/pic/start.png';
 
 
@@ -18,19 +18,19 @@ import bcontent1 from '../asserts/pic/optbcontent1.png';
 import bcontent2 from '../asserts/pic/optbcontent2.png';
 import bcontent3 from '../asserts/pic/optbcontent3.png';
 
-import q3background from '../asserts/pic/q3background.png';
-import Q3clock from '../asserts/pic/Q3clock.png'
-import q4acontent from '../asserts/pic/q4acontent.png';
-import q4apattern from '../asserts/pic/q4apattern.png';
-import q4bcontent from '../asserts/pic/q4bcontent.png';
-import q4bpattern from '../asserts/pic/q4bpattern.png';
-import q5p from '../asserts/pic/q5p.png';
+// import q3background from '../asserts/pic/q3background.png';
+// import Q3clock from '../asserts/pic/Q3clock.png'
+// import q4acontent from '../asserts/pic/q4acontent.png';
+// import q4apattern from '../asserts/pic/q4apattern.png';
+// import q4bcontent from '../asserts/pic/q4bcontent.png';
+// import q4bpattern from '../asserts/pic/q4bpattern.png';
+// import q5p from '../asserts/pic/q5p.png';
 
-import backgroundImg from '../asserts/pic/fillnamebackground.png'
-import resultAp from '../asserts/pic/resultAp.png';
-import resultBp from '../asserts/pic/resultBp.png';
-import resultCp from '../asserts/pic/resultCp.png';
-import resultDp from '../asserts/pic/resultDp.png';
+// import backgroundImg from '../asserts/pic/fillnamebackground.png'
+// import resultAp from '../asserts/pic/resultAp.png';
+// import resultBp from '../asserts/pic/resultBp.png';
+// import resultCp from '../asserts/pic/resultCp.png';
+// import resultDp from '../asserts/pic/resultDp.png';
 
 import {Lines} from 'react-preloaders';
 
@@ -99,7 +99,7 @@ export default function Cover() {
             <img src={bcontent2} alt="preload"></img>
             <img src={bcontent3} alt="preload"></img>
         </div>
-        <Lines time={1000}/>
+        <Lines time={800}/>
         </>          
     );
 }

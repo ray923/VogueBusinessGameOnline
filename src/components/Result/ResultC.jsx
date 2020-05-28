@@ -5,7 +5,6 @@ import ResultQR from './ResultQR';
 import ResultName from './ResultName';
 import ResultCtitle from '../../asserts/pic/resultCtitle.png';
 import contentborder from '../../asserts/pic/resultCcontentborder.png';
-import content from '../../asserts/pic/resultCcontent.png';
 import share from '../../asserts/pic/resultAshare.png';
 import resultCp from '../../asserts/pic/resultCp.png';
 import CoverlogoforQ from '../Motion/coverlogoforQ';

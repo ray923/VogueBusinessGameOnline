@@ -234,11 +234,29 @@ html{
   width:4.493rem;
   height:1.08rem;
 }
+.App-q1-q1optionA-active {
+  position: absolute;
+  top:29.68vh;
+  left:0.253rem;
+  background: url(./asserts/pic/selectAActive.png) no-repeat;
+  background-size:100% 100%;
+  width:4.493rem;
+  height:1.08rem;
+}
 .App-q1-q1optionB {
   position: absolute;
   top:39.655vh;
   left:0.253rem;
   background: url(./asserts/pic/selectB.png) no-repeat;
+  background-size:100% 100%;
+  width:4.493rem;
+  height:1.08rem;
+}
+.App-q1-q1optionB-active {
+  position: absolute;
+  top:39.655vh;
+  left:0.253rem;
+  background: url(./asserts/pic/selectBActive.png) no-repeat;
   background-size:100% 100%;
   width:4.493rem;
   height:1.08rem;
@@ -263,7 +281,7 @@ html{
   left:0.162rem;
   top:0.608rem;
 }
-.App-q1-q1optionA-content {
+/* .App-q1-q1optionA-content {
   position: absolute;
   display:block;
 	font-family: SourceHanSansCN-Medium;
@@ -293,7 +311,14 @@ html{
   margin:0;
   padding:0;
   border:0;
-}
+} */
+
+
+
+
+
+
+
 
 
 .App-q2-q2qtitle {

@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import q1title from '../../asserts/pic/FashionM&A3.png';
 import q3qtitle from '../../asserts/pic/q3qtitle.png';
 import q3a from '../../asserts/pic/q3a.png';
+import q3aact from '../../asserts/pic/q3aActive.png';
 import q3b from '../../asserts/pic/q3b.png';
+import q3bact from '../../asserts/pic/q3bActive.png';
 import q3ap from '../../asserts/pic/q3apattern.png';
 import q3bp from '../../asserts/pic/q3bpattern.png';
 import CoverlogoforQ from '../Motion/coverlogoforQ';
@@ -54,10 +56,10 @@ export class Q3 extends Component{
                     </div>
 
                     <div onClick={(e)=>this.onSelection(5,"a",e)} className="App-q3-q1optionA">
-                        <img src={q3a} alt="q3a"></img>
+                        <img src={"a"===this.state.selected?q3aact:q3a} alt="q3a"></img>
                     </div>
                     <div onClick={(e)=>this.onSelection(10,"b",e)} className="App-q3-q1optionB">
-                        <img src={q3b} alt="q3b"></img>
+                        <img src={"b"===this.state.selected?q3bact:q3b} alt="q3b"></img>
                     </div>
                     
                     <div className="App-q3-bpattern-direction"></div>

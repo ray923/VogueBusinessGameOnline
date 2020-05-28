@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../App.css';
-import q1model from '../asserts/model/q1model.png';
+// import q1model from '../asserts/model/q1model.png';
 import coverp from '../asserts/pic/cover.png';
 import q1qtitle from '../asserts/pic/q1qtitle.png';
 import q1p from '../asserts/pic/q1p.png';
