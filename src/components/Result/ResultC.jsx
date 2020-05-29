@@ -6,6 +6,7 @@ import ResultName from './ResultName';
 import ResultCtitle from '../../asserts/pic/resultCtitle.png';
 import contentborder from '../../asserts/pic/resultCcontentborder.png';
 import share from '../../asserts/pic/resultAshare.png';
+import knowmore from '../../asserts/pic/knowmore.png';
 import resultCp from '../../asserts/pic/resultCp.png';
 import CoverlogoforQ from '../Motion/coverlogoforQ';
 import resultwhite from '../../asserts/pic/resultwhite.png';
@@ -47,19 +48,23 @@ export class ResultC extends Component{
                     <div className="App-resultC-circle-red sharenotshow" id="sharebutton" >
                         <img src={share} alt='share'></img>
                     </div>
+                    <Link to='/booking' replace>
+                        <div className="App-resultC-knowmore sharenotshow" id="knowmorebutton" >
+                            <img src={knowmore} alt='share'></img>
+                        </div>
+                    </Link>
                 </div>
                 <div className="App-resultC-p">
                     <img src={resultCp} alt='backgroundpattern'></img>
                 </div>
                 <div id="wechatimg" className="wechatimg">
                 </div>
-                <Link to='/booking'>
-                    <div id="knowmore" className="click-area sharenotshow">
+                
+                    {/* <div id="knowmore" className="click-area">
                         <img src={knowmoretitle} alt="knowmore" className="knowmoretitle"></img>
                         <img src={knowmorelight} alt="knowmore" className="knowmorelight"></img>
                         <img src={knowmorehand} alt="knowmore" className="knowmorehand"></img>
-                    </div>
-                </Link>
+                    </div> */}
             </div>
         )
     }

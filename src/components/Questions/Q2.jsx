@@ -67,7 +67,7 @@ export class Q2 extends Component{
                         <Q2selectionB selected={this.state.selected}/>
 
                     </div>
-                    <Link to={()=> { return this.state.thisscore>0 ? '/q3/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : null }}>
+                    <Link to={()=> { return this.state.thisscore>0 ? '/q3/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : "#" }} replace>
                         <NextButton divclass="App-q2-circle-p"/>
                     </Link>
                 </div>

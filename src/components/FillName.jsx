@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
 import fillnamelogo from '../asserts/pic/fillnamelogo.png'
 import fillnametitle from '../asserts/pic/fillnametitle.png';
 import fillnametitle2 from '../asserts/pic/fillnametitle2.png';
@@ -9,6 +8,7 @@ import fillnamefemale from '../asserts/pic/fillnamefemale.png';
 import fillnamefemaleact from '../asserts/pic/fillnamefemaleActive.png';
 import fillnamenext from '../asserts/pic/fillnamenext.png';
 import backgroundImg from '../asserts/pic/fillnamebackground.png'
+import Button from './Result/Button';
 
 export class FillName extends Component{
     constructor(props){
@@ -16,6 +16,7 @@ export class FillName extends Component{
         
         this.onChangeName = this.onChangeName.bind(this);
         this.setGender = this.setGender.bind(this);
+        //this.checkbeforenext = this.checkbeforenext(this);
 
         this.state = {
             name: "",
@@ -56,7 +57,7 @@ export class FillName extends Component{
             })
         }
     }
-   
+
     render() {
         
         return (
@@ -82,11 +83,10 @@ export class FillName extends Component{
                             onChange={this.onChangeName}
                             />
                     </div>
-                    <Link to={()=>{return "/" + this.state.result + "/" + (this.state.name?this.state.name:"Hi!Mate!")}}>
-                        <div className="App-fillname-circle">
-                            <img src={fillnamenext} alt='getresult'></img>
-                        </div>
-                    </Link>
+                    <div className="App-fillname-circle">
+                        <img src={fillnamenext} alt='getresult'></img>
+                    </div>
+                    <Button name={this.state.name} gender={this.state.gender} result={this.state.result}/>
                 </div>
             </div>
         )

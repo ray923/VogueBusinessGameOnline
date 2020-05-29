@@ -7,6 +7,7 @@ import ResultDtitle from '../../asserts/pic/resultDtitle.png';
 import contentborder from '../../asserts/pic/resultDcontentborder.png';
 import content from '../../asserts/pic/resultDcontent.png';
 import share from '../../asserts/pic/resultAshare.png';
+import knowmore from '../../asserts/pic/knowmore.png';
 import resultDp from '../../asserts/pic/resultDp.png';
 import { Link } from 'react-router-dom';
 import resultwhite from '../../asserts/pic/resultwhite.png';
@@ -51,19 +52,22 @@ export class ResultD extends Component{
                     <div className="App-resultD-circle-red sharenotshow" id="sharebutton" >
                         <img src={share} alt='share'></img>
                     </div>
+                    <Link to='/booking' replace>
+                        <div className="App-resultD-knowmore sharenotshow" id="knowmorebutton" >
+                            <img src={knowmore} alt='share'></img>
+                        </div>
+                    </Link>
                 </div>
                 <div className="App-resultD-p">
                     <img src={resultDp} alt='backgroundpattern'></img>
                 </div>
                 <div id="wechatimg" className="wechatimg">
                 </div>
-                <Link to='/booking'>
-                    <div id="knowmore" className="click-area sharenotshow">
+                    {/* <div id="knowmore" className="click-area">
                         <img src={knowmoretitle} alt="knowmore" className="knowmoretitle"></img>
                         <img src={knowmorelight} alt="knowmore" className="knowmorelight"></img>
                         <img src={knowmorehand} alt="knowmore" className="knowmorehand"></img>
-                    </div>
-                </Link>
+                    </div> */}
             </div>
         )
     }

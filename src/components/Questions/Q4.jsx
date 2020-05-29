@@ -44,7 +44,7 @@ export class Q4 extends Component{
         return (
             <div className="App">
                 <CoverlogoforQ/>
-                <div className="App-q1-background">
+                <div className="App-q4-background">
                     <div className="App-q1-q1titleNew">
                         <img src={q1title} alt="q1title"></img>
                     </div>
@@ -61,7 +61,7 @@ export class Q4 extends Component{
                             <Q4selection divclass="App-q4-q4boption" imgpath={"b"===this.state.selected?q4bact:q4b} />
                         </div>
                     </div>
-                    <Link to={()=> { return this.state.thisscore >0 ? '/q5/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : null}}>
+                    <Link to={()=> { return this.state.thisscore >0 ? '/q5/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : "#"}} replace>
                         <NextButton divclass="App-q4-circle-p"/>
                     </Link>
                 </div>

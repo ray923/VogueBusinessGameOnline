@@ -22,6 +22,7 @@
     "resize-observer-polyfill": "^1.5.1",
     "swipe-js-iso": "^2.1.5"
   },
+  "homepage":".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

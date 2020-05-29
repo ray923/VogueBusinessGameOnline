@@ -63,7 +63,7 @@ export class Q3 extends Component{
                     </div>
                     
                     <div className="App-q3-bpattern-direction"></div>
-                    <Link to={()=> { return this.state.thisscore>0 ? '/q4/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : null}}>
+                    <Link to={()=> { return this.state.thisscore>0 ? '/q4/' + (Number(this.state.thisscore) + Number(this.state.totalscore)) : "#"}} replace>
                         <NextButton divclass="App-q3-circle-p"/>
                     </Link>
 

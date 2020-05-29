@@ -12,6 +12,19 @@
     <script type="text/javascript" src="./jslib/canvas2image.js"></script>
     <script src="https://js.selfimg.com.cn/??lib/jweixin-1.0.0.js,brickjs/mshare/0.1.1/mshare.min.js"></script>
     <script type="text/javascript">
+
+      var html = document.getElementsByTagName('html')[0];
+      var settedFs = parseFloat(html.style.fontSize);
+      var realFs = parseFloat(window.getComputedStyle(html).fontSize);  
+      var delta = realFs - settedFs;
+  
+      if (Math.abs(delta) > 0)
+      {
+        var settingFs = realFs;
+        html.setAttribute('style', 'font-size:'+settingFs + 'px!important');
+      }
+    </script>
+    <script type="text/javascript">
       var createHTMLImage = function a() 
       {
           window.scroll(0,0);
@@ -20,17 +33,18 @@
           {
             var img = Canvas2Image.convertToJPEG(canvas, canvas.width, canvas.height);
             document.getElementById("wechatimg").appendChild(img);
-            document.getElementById("knowmore").classList.remove("sharenotshow");
-          })},2500);
+            document.getElementById("sharebutton").classList.remove("sharenotshow");
+            document.getElementById("knowmorebutton").classList.remove("sharenotshow");
+          })},1000);
       };
       new brickjs.MShare({
           site: "1",
           catalog: "",
-          sUrl: '分享url', //分享url
-          titleAppMessage: '分享标题',//分享标题
-          titleTimeline: '分享朋友圈标题',//分享朋友圈标题
-          imgUrl: '分享图url',//分享图url
-          desc: '分享导语',//分享导语
+          sUrl: 'http://m.vogue.com.cn/feature/voguebusiness/index.html', //分享url
+          titleAppMessage: '时尚投资小游戏',//分享标题
+          titleTimeline: '时尚投资小游戏',//分享朋友圈标题
+          imgUrl: 'http://m.vogue.com.cn/feature/voguebusiness/static/media/wechatshare.jpg',//分享图url
+          desc: '作为商界大亨，此刻的你拥有无尽的财富与资本。你正谋划着通过投资并购建立自己的时尚帝国......',//分享导语
           appKey: {
               tsina: "2800445271"
           },
@@ -51,24 +65,4 @@
   <body>
     <div id="root"></div>
   </body>
-  <script type="text/javascript">
-
-    var html = document.getElementsByTagName('html')[0];
-    var settedFs = parseFloat(html.style.fontSize);
-    var realFs = parseFloat(window.getComputedStyle(html).fontSize);  
-    var delta = realFs - settedFs;
-
-    if (Math.abs(delta) > 0)
-    {
-      var settingFs = realFs;
-      html.setAttribute('style', 'font-size:'+settingFs + 'px!important');
-    }
-
-    $("#inputname").focus(function () {
-        window.scroll(0,0);
-      });
-    $("#inputname").blur(function () {
-        window.scroll(0,0);
-      });
-  </script>
 </html>

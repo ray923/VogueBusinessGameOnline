@@ -85,7 +85,7 @@ export default function Cover() {
                 <animated.img style={wordstyle} alt="content" rel="preload" src={covercontent} className="App-Cover-circle-b-1"></animated.img>
             </div>
             <div className="cover-slash"></div>
-            <Link to={'/q1'}>
+            <Link to={'/q1'} replace>
                     <animated.div className="App-Cover-circle-p" style={startstyle}>
                         <img rel="preload" src={start} alt='start'></img>
                     </animated.div>

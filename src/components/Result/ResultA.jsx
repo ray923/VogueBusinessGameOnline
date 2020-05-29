@@ -7,6 +7,7 @@ import ResultAtitle from '../../asserts/pic/resultAtitle.png';
 import contentborder from '../../asserts/pic/resultAcontentborder.png';
 import content from '../../asserts/pic/resultAcontent.png';
 import share from '../../asserts/pic/resultAshare.png';
+import knowmore from '../../asserts/pic/knowmore.png';
 import resultAp from '../../asserts/pic/resultAp.png';
 import CoverlogoforQ from '../Motion/coverlogoforQ';
 import resultbackground from '../../asserts/pic/resultAbackground.png';
@@ -31,8 +32,6 @@ export class ResultA extends Component{
 
     render() {
         return (
-            <>
-
             <div className="App-resultA">
                 <img className="App-resultA-backimg" alt='background' src={resultbackground}></img>
                 <CoverlogoforQ/>
@@ -48,25 +47,29 @@ export class ResultA extends Component{
                     </div>
                     <img src={contentborder} rel="preload" alt='contentborder' className="App-resultA-content-borderimg"></img>
                     <img src={content} rel="preload" alt='content' className="App-resultA-contentimg"></img>
-                    <div className="App-resultA-circle-red" id="sharebutton" >
+                    <div className="App-resultA-circle-red sharenotshow" id="sharebutton" >
                         <img src={share}  rel="preload" alt='share'></img>
                     </div>
+                    <Link to='/booking' replace>
+                        <div className="App-resultA-knowmore sharenotshow" id="knowmorebutton" >
+                            <img src={knowmore}  rel="preload" alt='share'></img>
+                        </div>
+                    </Link>
                 </div>
                 <div className="App-resultA-p">
                     <img src={resultAp} rel="preload" alt='backgroundpattern'></img>
                 </div>
                 <div id="wechatimg" className="wechatimg">
                 </div>
-                <Link to='/booking'>
-                    <div id="knowmore" className="click-area sharenotshow">
+                
+                    {/* <div id="knowmore" className="click-area">
                         <img src={knowmoretitle} alt="knowmore" className="knowmoretitle"></img>
                         <img src={knowmorelight} alt="knowmore" className="knowmorelight"></img>
                         <img src={knowmorehand} alt="knowmore" className="knowmorehand"></img>
-                    </div>
-                </Link>
-            </div>
+                    </div> */}
 
-            </>
+                
+            </div>
         )
     }
 }
