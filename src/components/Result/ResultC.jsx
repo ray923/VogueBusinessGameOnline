@@ -12,9 +12,6 @@ import CoverlogoforQ from '../Motion/coverlogoforQ';
 import resultwhite from '../../asserts/pic/resultwhite.png';
 import resultbackground from '../../asserts/pic/resultCbackground.png';
 
-import knowmoretitle from '../../asserts/pic/knowmoretitle.png';
-import knowmorelight from '../../asserts/pic/knowmorelight.png';
-import knowmorehand from '../../asserts/pic/knowmorehand.png';
 
 export class ResultC extends Component{
     constructor(props){

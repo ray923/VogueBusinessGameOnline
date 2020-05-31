@@ -39,34 +39,33 @@ import bcontent3act from '../asserts/pic/optbcontent3Active.png';
 // import resultCp from '../asserts/pic/resultCp.png';
 // import resultDp from '../asserts/pic/resultDp.png';
 
-import {Lines} from 'react-preloaders';
 
 export default function Cover() {    
 
     const people = useSpring({
         from: { opacity: 0},
         to: { opacity: 1},
-        delay: 2500,
+        delay: 1500,
         config: { mass: 5, tension: 2000, friction: 1000 }
     })
 
     const startstyle = useSpring({
         from: { opacity: 1, transform: 'scale(0)' },
         to: { opacity: 1, transform: 'scale(1)' },
-        delay: 2900,
+        delay: 1900,
         config: config.slow
     })
     const circleblue = useSpring({
         from: { transform: 'scale(0)'},
         to: { transform: 'scale(1)'},
-        delay: 2500,
+        delay: 1500,
         config: { mass: 1, tension: 100, friction: 30 }
     })
 
     const wordstyle = useSpring({
         from: { height:'0rem', opacity:0},
         to: { height:'1.324rem',opacity:1},
-        delay: 3200,
+        delay: 2200,
         config: { mass: 1, tension: 100, friction: 30 }
     })
 

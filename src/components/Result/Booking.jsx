@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import bookinglogo from '../../asserts/pic/bookinglogo.png';
 import redtitle from '../../asserts/pic/bookingredtitle.png';
 import bluetitle from '../../asserts/pic/bookingbluetitle.png';
-import qrcode from '../../asserts/pic/bookingQRcode.png';
+import bookingclick from '../../asserts/pic/bookingclick.png';
 import bookingp from '../../asserts/pic/bookingp.png';
 
 export class Booking extends Component{
@@ -22,7 +22,9 @@ export class Booking extends Component{
                     <div className="App-booking-circle-b"></div>
                     <div className="App-booking-bluetitle">
                         <img src={bluetitle} alt='title-blue' className="App-booking-bluetitle-content"></img>
-                        <img src={qrcode} alt='qrcode' className="App-booking-QRcode"></img>
+                        <a href="https://app9HeJRlRL5330.h5.xiaoeknow.com/content_page/eyJ0eXBlIjoiMiIsInJlc291cmNlX3R5cGUiOjQsInJlc291cmNlX2lkIjoibF81ZWQwYmRkOGNlMTE1X1ludlZlaWVvIiwiYXBwX2lkIjoiYXBwOUhlSlJsUkw1MzMwIiwicHJvZHVjdF9pZCI6IiJ9">
+                            <img src={bookingclick} alt='bookingclick' className="App-booking-QRcode"></img>
+                        </a>
                     </div>
                     {/* <div className="App-booking-slash"></div>
                     <div className="App-booking-content">

@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#000000" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <script type="text/javascript" src="./jslib/jquery-3.5.1.slim.min.js"></script>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />  
+    <script type="text/javascript" src="./jslib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict()</script>
     <script type="text/javascript" src="./jslib/html2canvas.min.js"></script>
     <script type="text/javascript" src="./jslib/canvas2image.js"></script>
-    <script src="https://js.selfimg.com.cn/??lib/jweixin-1.0.0.js,brickjs/mshare/0.1.1/mshare.min.js"></script>
     <script type="text/javascript">
-
       var html = document.getElementsByTagName('html')[0];
       var settedFs = parseFloat(html.style.fontSize);
       var realFs = parseFloat(window.getComputedStyle(html).fontSize);  
@@ -28,41 +27,46 @@
       var createHTMLImage = function a() 
       {
           window.scroll(0,0);
-          setTimeout(function B(){
+          jQuery.noConflict();
+          jQuery(function($){setTimeout(function B(){
           html2canvas(document.body).then(function(canvas) 
           {
             var img = Canvas2Image.convertToJPEG(canvas, canvas.width, canvas.height);
             document.getElementById("wechatimg").appendChild(img);
             document.getElementById("sharebutton").classList.remove("sharenotshow");
             document.getElementById("knowmorebutton").classList.remove("sharenotshow");
-          })},1000);
-      };
-      new brickjs.MShare({
-          site: "1",
-          catalog: "",
-          sUrl: 'http://m.vogue.com.cn/feature/voguebusiness/index.html', //分享url
-          titleAppMessage: '时尚投资小游戏',//分享标题
-          titleTimeline: '时尚投资小游戏',//分享朋友圈标题
-          imgUrl: 'http://m.vogue.com.cn/feature/voguebusiness/static/media/wechatshare.jpg',//分享图url
-          desc: '作为商界大亨，此刻的你拥有无尽的财富与资本。你正谋划着通过投资并购建立自己的时尚帝国......',//分享导语
-          appKey: {
-              tsina: "2800445271"
-          },
-          ralateUid: '1508453695',
-          wxGuide: {
-              imgUrl: 'https://css.selfimg.com.cn/vogue/mdiscovery/images/weixin-guide.png',
-              width: 295, //微信提示图片宽高
-              height: 87,
-              style: {
-                  right: 0,
-                  top: 0
-              }
-          }
-      });
-    </script>
-    <title>VogueBusiness In China</title>
+          })},2000)});
+      }
+    </script>    
+    <title>Vogue Business in China</title>
   </head>
   <body>
     <div id="root"></div>
   </body>
+  <!-- <script type="text/javascript" src="http://js.selfimg.com.cn/gallery/zepto/1.1.4/zepto.min.js"></script> -->
+  <script type="text/javascript" src="https://js.selfimg.com.cn/??lib/jweixin-1.0.0.js,brickjs/mshare/0.1.1/mshare.min.js"></script>
+  <script type="text/javascript">
+    new brickjs.MShare({
+        site: "1",
+        catalog: "",
+        sUrl: 'http://m.vogue.com.cn/mfeature/voguebusiness/index.html', //分享url
+        titleAppMessage: '时尚投资小游戏',//分享标题
+        titleTimeline: '时尚投资小游戏',//分享朋友圈标题
+        imgUrl: 'http://m.vogue.com.cn/mfeature/voguebusiness/static/media/wechatsharev1.jpg',//分享图url
+        desc: '作为商界大亨，此刻的你拥有无尽的财富与资本。你正谋划着通过投资并购建立自己的时尚帝国......',//分享导语
+        appKey: {
+            tsina: "2800445271"
+        },
+        ralateUid: '1508453695',
+        wxGuide: {
+            imgUrl: 'https://css.selfimg.com.cn/vogue/mdiscovery/images/weixin-guide.png',
+            width: 295, //微信提示图片宽高
+            height: 87,
+            style: {
+                right: 0,
+                top: 0
+            }
+        }
+    });
+  </script>
 </html>

@@ -13,9 +13,6 @@ import { Link } from 'react-router-dom';
 import resultwhite from '../../asserts/pic/resultwhite.png';
 import resultbackground from '../../asserts/pic/resultDbackground.png';
 
-import knowmoretitle from '../../asserts/pic/knowmoretitle.png';
-import knowmorelight from '../../asserts/pic/knowmorelight.png';
-import knowmorehand from '../../asserts/pic/knowmorehand.png';
 
 export class ResultD extends Component{
     constructor(props){
