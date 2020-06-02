@@ -66,3 +66,21 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+VogueBusinessGame HTML 问答游戏
+使用库：
+React
+React Router v4
+React spring
+flexible
+
+html2canvas
+canvastoimage
+
+微信分享
+百度统计
+长按保存图片
+react spring动画效果
+css keyframes动画效果
+.......
