@@ -3,6 +3,7 @@ import {Route, HashRouter} from 'react-router-dom';
 
 import Cover from './components/Cover'
 import PreCover from './components/preCover'
+import {Statistics} from './components/Statistics'
 // import {Q1} from './components/Questions/Q1'
 // import {ResultA} from './components/Result/ResultA'
 // import {ResultB} from './components/Result/ResultB'
@@ -18,6 +19,7 @@ export default function App() {
       <HashRouter>
         <Route exact path='/' component={Cover} />
         <Route exact path='/cover' component={PreCover} />
+        <Route exact path='/statistics' component={Statistics} />
         <SubApp/>
         
 
