@@ -20,9 +20,10 @@
     "react-swipe": "^6.0.4",
     "react-swipeable-views": "^0.13.9",
     "resize-observer-polyfill": "^1.5.1",
+    "styled-components": "^5.2.3",
     "swipe-js-iso": "^2.1.5"
   },
-  "homepage":".",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
