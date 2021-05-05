@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Animation3Dcard from './components/3dCardsAnimation/Animation3Dcard';
 import ControlRedirect from './components/ControlRedirect';
 
-import SubApp from './components/SubApp'
+import SubApp from './components/VogueGame/SubApp'
 
 export default function App() {
 

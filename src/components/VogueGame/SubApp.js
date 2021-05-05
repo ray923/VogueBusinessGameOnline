@@ -2,17 +2,17 @@ import React from 'react';
 import {Route, useLocation} from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
 
-import {Q1} from './VogueGame/Questions/Q1'
-import {Q2} from './VogueGame/Questions/Q2'
-import {Q3} from './VogueGame/Questions/Q3'
-import {Q4} from './VogueGame/Questions/Q4'
-import {Q5} from './VogueGame/Questions/Q5'
-import {FillName} from './VogueGame/FillName'
-import {Booking} from './VogueGame/Result/Booking'
-import {ResultA} from './VogueGame/Result/ResultA'
-import {ResultB} from './VogueGame/Result/ResultB'
-import {ResultC} from './VogueGame/Result/ResultC'
-import {ResultD} from './VogueGame/Result/ResultD'
+import {Q1} from './Questions/Q1'
+import {Q2} from './Questions/Q2'
+import {Q3} from './Questions/Q3'
+import {Q4} from './Questions/Q4'
+import {Q5} from './Questions/Q5'
+import {FillName} from './FillName'
+import {Booking} from './Result/Booking'
+import {ResultA} from './Result/ResultA'
+import {ResultB} from './Result/ResultB'
+import {ResultC} from './Result/ResultC'
+import {ResultD} from './Result/ResultD'
 
 export default function SubApp() {
 

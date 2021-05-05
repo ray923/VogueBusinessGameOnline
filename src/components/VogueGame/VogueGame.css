@@ -1,6 +1,5 @@
 html{
   overflow: hidden;
-  background-color:rgb(241,237,228);
 }
 /* 长按图片保存需要确定画布宽度和高度，所以设置高宽，但会影响到整体布局 */
 /* #root {
@@ -161,10 +160,6 @@ html{
 }
 
 
-
-
-
-
 .App-q1-logo {
   position: absolute;
   top: 2.709vh;
@@ -194,17 +189,6 @@ html{
   display: block;
   height:2.217vh;
 }
-/* .App-q1-q1title {
-  position: absolute;
-  left: 0.56rem;
-  top: 0.28rem;
-}
-.App-q1-q1title img {
-  position: absolute;
-  display: block;
-  width:2.693rem;
-  height:0.48rem
-} */
 .App-q1-q1qtitle {
   position: relative;
   left:0.64rem;
@@ -282,44 +266,6 @@ html{
   left:0.162rem;
   top:0.608rem;
 }
-/* .App-q1-q1optionA-content {
-  position: absolute;
-  display:block;
-	font-family: SourceHanSansCN-Medium;
-	font-size: 0.405rem;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 0.579rem;
-	letter-spacing: 0rem;
-  color: #ffffff;
-  margin:0;
-  padding:0;
-  border:0;
-  left:1.27rem;
-  bottom:0.324rem;
-}
-.App-q1-q1optionB-content {
-  position: absolute;
-  left:1.271rem;
-  bottom:0.308rem;
-	font-family: SourceHanSansCN-Medium;
-	font-size: 0.394rem;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 0.579rem;
-	letter-spacing: 0rem;
-  color: #ffffff;
-  margin:0;
-  padding:0;
-  border:0;
-} */
-
-
-
-
-
-
-
 
 
 .App-q2-q2qtitle {
@@ -526,17 +472,6 @@ html{
   width:2.459rem;
   height:4.473rem;
 }
-/* .App-q3-mask{
-  position: absolute;
-  height:1.413rem;
-  width:100vw;
-  z-index: 10;
-  bottom:0;
-  background-color:rgb(241,237,228);
-} */
-
-
-
 
 
 
@@ -974,26 +909,7 @@ html{
   width:7.04rem;
   height: 3.32rem;
 }
-/* .App-booking-slash {
-  position: absolute;
-  left:2.373rem;
-  top:12.173rem;
-	width: 5.689rem;
-  height: 0.027rem;
-  background-color:white;
-  z-index:3;
-}
-.App-booking-content {
-  position: absolute;
-  left:1.693rem;
-  top:12.533rem;
-  z-index:3;
-}
-.App-booking-content img {
-  display: block;
-  height:1.351rem;
-  width: 7.135rem;;
-} */
+
 .App-booking-QRcode {
   position: absolute;
   display:block;
@@ -1003,11 +919,7 @@ html{
   width:2.16rem;
   height:2.16rem;
 }
-/* .App-booking-QRcode img {
-  display: block;
-  width:2rem;
-  height:2rem;
-} */
+
 .App-booking-bookingp {
   position: absolute;
   left:2.933rem;
@@ -1049,16 +961,7 @@ html{
   left:0;
   width:8.533rem;
 }
-/* .App-resultA-logo {
-  position: absolute;
-  left:0.649rem;
-  top:0.338rem;
-} */
-/* .App-resultA-logo img {
-  display: block;
-  height:0.392rem;
-  width:5.568rem;
-} */
+
 .App-resultA-background {
   position: absolute;
   top: 1.533rem;
@@ -1143,12 +1046,6 @@ html{
   position: absolute;
   left: 2.013rem;
   top:12.22rem;
-  /* width: 2.16rem;
-  height: 2.16rem; */
-  /* background:#eb0c16;
-  -moz-border-radius: 1.08rem;
-  -webkit-border-radius: 1.08rem;
-  border-radius: 1.08rem; */
   z-index:3;
 }
 .App-resultA-circle-red img{
