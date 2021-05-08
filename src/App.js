@@ -1,11 +1,11 @@
 import React from 'react';
 import {Route, HashRouter} from 'react-router-dom';
 
-import Cover from './components/VogueGame/Cover';
-import Home from './components/Home';
+
+import Home from './components/Resume/ResumeHome';
 import Animation3Dcard from './components/3dCardsAnimation/Animation3Dcard';
 import ControlRedirect from './components/ControlRedirect';
-
+import Cover from './components/VogueGame/Cover';
 import SubApp from './components/VogueGame/SubApp'
 
 export default function App() {
