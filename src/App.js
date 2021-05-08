@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, HashRouter} from 'react-router-dom';
 
 
-import Home from './components/Resume/ResumeHome';
+import Home from './components/Home';
 import Animation3Dcard from './components/3dCardsAnimation/Animation3Dcard';
 import ControlRedirect from './components/ControlRedirect';
 import Cover from './components/VogueGame/Cover';
